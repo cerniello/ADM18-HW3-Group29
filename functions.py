@@ -185,36 +185,15 @@ def search_engine_1(query):
             lst = row.split('\t')
             lst = [lst[7],lst[4],lst[2],lst[8]]
             list_for_df.append(lst)
-        
+
+
     df=pd.DataFrame(list_for_df, columns=['Title', 'Description', 'City', 'Url'])
-    
+    df.index = np.arange(1, len(df)+1)
     return df.head(5)   
         
 
 
 # Q 3.2 functions:
-
-
-# NOT USED (TO DELETE)
-"""
-def dict_with_tf(data):
-    vocabulary = load_obj('vocabulary')
-    n = len(data)
-    
-    ii2 = defaultdict(list)
-    
-    
-    for i in range(n):
-        tokenized_str = (remove_step(data.iloc[i]['title']) + ' ' 
-                                     + remove_step(data.iloc[i]['description']))
-    
-        for term in tokenized_str.split(' '):
-            doc_name = 'doc_%s'%i
-            ii2[term].append((doc_name,1))
-        
-    return ii2
-"""
-
 
 def reduce_doc_list(doc_list):
     """
@@ -298,14 +277,13 @@ def search_engine_2(query, k = 5):
     query = remove_step(query).split(' ')
     vocabulary = load_obj('vocabulary')
     
-    # filtering the values not contained in vocabulary
-    # dict and mapping each term to its term_ID value
-    
-    # for word in query:
-        # if word is not in vocabulary.keys:
-            # print('Zero documents with all char of the query')
-            #return
-    query = filter(lambda x: x in vocabulary.keys(),query)
+    # Conjunctive query: all the query terms should be in vocabulary
+    for term in query:
+        if term not in vocabulary.keys():
+            print('No results')
+            return
+
+    # mapping each term to its own term_ID
     query = list(map(lambda x: vocabulary[x], query))
     
     # making query list and array at the same time 
@@ -317,9 +295,9 @@ def search_engine_2(query, k = 5):
         query_list.append(key)
         query_array.append(frequence)
     
-    # creating query list and numpy array with frequencies
+    # creating query numpy array with frequencies (from query arrays)
     query = query_list
-    query_array = np.array([query_array])
+    query_array = np.array([query])
 
     # list of documents obtained intersecating each list
     # from inverted index 1 (easier to compute)
@@ -347,9 +325,13 @@ def search_engine_2(query, k = 5):
     # print('%d documents'%len(rank_lst)) DEBUG
     
     df = first_k_documents(rank_lst, 5)
-    
-    return len(rank_lst)
-    return df
+
+
+    if len(df) == 0:
+        print ('No results')
+    else:
+        df.index = np.arange(1, len(df)+1)
+        return df
 
 
 def first_k_documents(heap_rank_lst, k = 5):
@@ -504,10 +486,11 @@ def search_engine_3(query):
         with open ("data/docs/" + tup[1] + '.tsv', encoding = 'utf-8') as doc:
             row = doc.read()
             lst = row.split('\t')
-            lst = [i, lst[7],lst[4],lst[2],lst[8]]
+            lst = [i+1, lst[7],lst[4],lst[2],lst[8]]
             list_for_df.append(lst)
         
     df=pd.DataFrame(list_for_df, columns=['Ranking','Title', 'Description', 'City', 'Url'])
-    
+
+    print ('Found %i documents' %d_len)
     return df.head(k)
     
