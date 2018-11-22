@@ -30,6 +30,7 @@ from heapq import heappush, heappop
 
 from geopy.geocoders import Nominatim
 from geopy import distance
+import folium
 
 
 
@@ -372,8 +373,11 @@ def first_k_documents(heap_rank_lst, k = 5):
 def distance_rank(center, house):
       
     R = distance.distance(center, house).km
-    return round(1 - (R/(1+R)),3)
-
+    
+    if R < 15:
+        return round(1-R*1/15, 4)
+    else:
+        return 0
 
 # scoring price rank between query and document
 def price_rank(p_query, p_doc):
@@ -387,11 +391,11 @@ def price_rank(p_query, p_doc):
 
 
 
-def rooms_rank (rooms, nrooms, rooms_ranker):
+def rooms_rank (rooms, nrooms):
     """
     ranks the room
     """
-    
+
     # if rooms or nrooms is a string (eg: studio)
     # convert it into a string
     if isinstance(rooms, str):
@@ -400,21 +404,25 @@ def rooms_rank (rooms, nrooms, rooms_ranker):
         nrooms = 1
     
     # taking the distance between the two rooms
-    value = abs(rooms - nrooms)
+    value = nrooms - rooms
 
-    # if there's no a region of values give zero
-    if value not in rooms_ranker:
+    if value < 0:
         return 0
+    elif value == 0:
+        return 1
+    elif value == 1:
+        return 0.75
+    elif value == 2:
+        return 0.5
+    elif value == 3:
+        return 0.25
     else:
-        # give the value signed in rooms_ranker
-        return rooms_ranker[value]
-    
+        return 0
+
 
 ##### Q4. Search engine 3
 def search_engine_3(query): 
     
-    rooms_ranker = { 0: 1, 1: 0.7, 2: 0.4, 3: 0.1}
-
     query = remove_step(query)
     query = list(set(query.split(' ')))
     
@@ -468,9 +476,9 @@ def search_engine_3(query):
             target_location = (float(row[5]), float(row[6]))
             rank_dist = distance_rank(center, target_location)
              
-            score_price = 0.3*price_rank(target_price,dp)
-            ratio_rooms = 0.1*rooms_rank(rooms, nrooms, rooms_ranker)
-            score_location = 0.6*rank_dist
+            score_price = 0.2*price_rank(target_price,dp)
+            ratio_rooms = 0.1*rooms_rank(rooms, nrooms)
+            score_location = 0.7*rank_dist
             heap.append(tuple([score_price+ratio_rooms+score_location,doc]))   
             #heapq.heappush(heap,tuple([score_price+ratio_rooms,doc])) 
             
@@ -491,6 +499,43 @@ def search_engine_3(query):
         
     df=pd.DataFrame(list_for_df, columns=['Ranking','Title', 'Description', 'City', 'Url'])
 
-    print ('Found %i documents' %d_len)
+    print ('Found %i results' %d_len)
+
+    df.set_index('Ranking')
     return df.head(k)
+
+
+def houses_map(location, km):
+    """
+    return the map centered on the location
+    with the hotel inside the radius(km)
+    input:
+    - location
+    - km
+    output:
+    - folium map
+    """
     
+    # find the location with geolocator
+    geolocator = Nominatim(user_agent="specify_your_app_name_here")
+    location = geolocator.geocode(location)
+    
+    # take city tuples
+    center = (location.latitude, location.longitude)
+    m = folium.Map(center, zoom_start=13)
+    folium.Marker(location = center, icon=folium.Icon(icon='cloud',color='green')).add_to(m)
+    folium.Circle(center, radius= km * 1000, color = 'blue', fill = True).add_to(m)
+    
+    for i in range(18259):
+        with open('data/docs/doc_'+str(i)+'.tsv', encoding = 'utf-8') as f:
+            row = f.read()
+            row = row.split('\t')
+            nrooms = row[1]
+            
+            house = (float(row[5]),float(row[6]))
+            
+            riga = row[7] + '\n' +row[8]
+            if distance.distance(center, house).km <= km:
+                folium.Marker(location = house,
+                              popup = row[8]).add_to(m)
+    return m
