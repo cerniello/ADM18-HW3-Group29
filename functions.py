@@ -428,22 +428,18 @@ def rooms_rank (rooms, nrooms):
     
     #if value is 0, it means that the doc/post completely fits with the user needs, otherwise, we setted different score, according on how much the value steps away from the best value. If the difference (value) is too high or is negative, it doesn't fit well so we decided to give 0, giving advantage to other docs.  
     
-    switch (value){
-        case < 0 :
-            return 0
-        case 0:
-            return 1
-        case 1:
-            return 0.75
-        case 2:
-            return 0.5
-        case 3:
-            return 0.25
-        default:
-            return 0
-    }
-    
-
+    if value < 0:
+        return 0
+    elif value == 0:
+        return 1
+    elif value == 1:
+        return 0.75
+    elif value == 2:
+        return 0.5
+    elif value == 3:
+        return 0.25
+    else:
+        return 0
 
 # For the last search engine with additional information put by the users, we decided "to embed" the score for price, bedrooms and location directly in the first search engine created. Hence, we are able to add every doc with his new score into the heap. And for k documents, we call the heap with heappop function in such a way that we get the k documents with highest score, shown in a dataframe.
 
