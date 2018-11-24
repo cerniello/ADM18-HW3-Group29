@@ -1,0 +1,3438 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_a415f3bdd8994c2c90d75dabda813647 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_a415f3bdd8994c2c90d75dabda813647" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_a415f3bdd8994c2c90d75dabda813647 = L.map(
+        'map_a415f3bdd8994c2c90d75dabda813647', {
+        center: [30.2711286, -97.7436995],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_a8929ebe5f514ff9a4901354d0d26ed8 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+    
+        var marker_5c4f656bb5db46968bc608faca9ded38 = L.marker(
+            [30.2711286, -97.7436995],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+
+                var icon_aac9fd6f0829429e9fac390f0879459b = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5c4f656bb5db46968bc608faca9ded38.setIcon(icon_aac9fd6f0829429e9fac390f0879459b);
+            
+    
+
+            var circle_9a35a47855444b5f90e651f2ad2d80b3 = L.circle(
+                [30.2711286, -97.7436995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2000.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a415f3bdd8994c2c90d75dabda813647);
+            
+    
+        var marker_d95aef9b6c484b39850eaf58b5f658f3 = L.marker(
+            [30.2659474442269, -97.74144275164379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_716c1ae200c5479fb7cac21174ff0729 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_60df3a34b02443c19a2efc7d28509104 = $('<div id="html_60df3a34b02443c19a2efc7d28509104" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $454, <b>Rooms</b>:3, <b>Distance</b> : 0.61 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/917932?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_716c1ae200c5479fb7cac21174ff0729.setContent(html_60df3a34b02443c19a2efc7d28509104);
+            
+
+            marker_d95aef9b6c484b39850eaf58b5f658f3.bindPopup(popup_716c1ae200c5479fb7cac21174ff0729)
+            ;
+
+            
+        
+    
+        var marker_4d50e70b746d44129b9c2f260c5f98e2 = L.marker(
+            [30.2661156477782, -97.73272580455341],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_748e65ca89bb4d8eac75e7cae84561d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e972ff31b7fc4e1b987dbacdcd09493b = $('<div id="html_e972ff31b7fc4e1b987dbacdcd09493b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $160, <b>Rooms</b>:1, <b>Distance</b> : 1.19 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15271035?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_748e65ca89bb4d8eac75e7cae84561d7.setContent(html_e972ff31b7fc4e1b987dbacdcd09493b);
+            
+
+            marker_4d50e70b746d44129b9c2f260c5f98e2.bindPopup(popup_748e65ca89bb4d8eac75e7cae84561d7)
+            ;
+
+            
+        
+    
+        var marker_1eb67684590a444990ac7e7889e8f76c = L.marker(
+            [30.274566993262898, -97.75805920144421],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_76013a2cf82f4ef0898fc46fd0c01f92 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a80993defa2c4983a74b6472895d940d = $('<div id="html_a80993defa2c4983a74b6472895d940d" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $139, <b>Rooms</b>:2, <b>Distance</b> : 1.43 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17639662?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_76013a2cf82f4ef0898fc46fd0c01f92.setContent(html_a80993defa2c4983a74b6472895d940d);
+            
+
+            marker_1eb67684590a444990ac7e7889e8f76c.bindPopup(popup_76013a2cf82f4ef0898fc46fd0c01f92)
+            ;
+
+            
+        
+    
+        var marker_848cb3596a2d465da62e1e0758aa734e = L.marker(
+            [30.276612649305395, -97.73461311554328],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_1c1eacbe1e2942dea1b4ccd0f16a6594 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8bab7e5e21c64378b26851bd8c90ff4a = $('<div id="html_8bab7e5e21c64378b26851bd8c90ff4a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $97, <b>Rooms</b>:1, <b>Distance</b> : 1.06 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/8267387?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_1c1eacbe1e2942dea1b4ccd0f16a6594.setContent(html_8bab7e5e21c64378b26851bd8c90ff4a);
+            
+
+            marker_848cb3596a2d465da62e1e0758aa734e.bindPopup(popup_1c1eacbe1e2942dea1b4ccd0f16a6594)
+            ;
+
+            
+        
+    
+        var marker_d2883ca047854b8bb5faba6c588b8286 = L.marker(
+            [30.2708361983106, -97.7414312619996],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f1791556a9a3493780d99113726ea9da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d2bc1f4a34ad4bf6a816a1f199e02e26 = $('<div id="html_d2bc1f4a34ad4bf6a816a1f199e02e26" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:1, <b>Distance</b> : 0.22 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/669469?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_f1791556a9a3493780d99113726ea9da.setContent(html_d2bc1f4a34ad4bf6a816a1f199e02e26);
+            
+
+            marker_d2883ca047854b8bb5faba6c588b8286.bindPopup(popup_f1791556a9a3493780d99113726ea9da)
+            ;
+
+            
+        
+    
+        var marker_4f11691cadf54d0d963484c92f43a0c5 = L.marker(
+            [30.273943952790898, -97.7304314753081],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_72da86d8c55d4892a1055ac669901812 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d591beed0d054fea99754b03cb4370c1 = $('<div id="html_d591beed0d054fea99754b03cb4370c1" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $364, <b>Rooms</b>:2, <b>Distance</b> : 1.31 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5396676?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_72da86d8c55d4892a1055ac669901812.setContent(html_d591beed0d054fea99754b03cb4370c1);
+            
+
+            marker_4f11691cadf54d0d963484c92f43a0c5.bindPopup(popup_72da86d8c55d4892a1055ac669901812)
+            ;
+
+            
+        
+    
+        var marker_d04fecfa6396411e9708c54f4c965583 = L.marker(
+            [30.2713342283538, -97.72833499778281],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e13ad5091dd7447fa114787c876a236c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_86e9f8accc6940df896ca3f9cc58d41e = $('<div id="html_86e9f8accc6940df896ca3f9cc58d41e" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $119, <b>Rooms</b>:Studio, <b>Distance</b> : 1.48 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/14126411?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_e13ad5091dd7447fa114787c876a236c.setContent(html_86e9f8accc6940df896ca3f9cc58d41e);
+            
+
+            marker_d04fecfa6396411e9708c54f4c965583.bindPopup(popup_e13ad5091dd7447fa114787c876a236c)
+            ;
+
+            
+        
+    
+        var marker_79a42a654e12469d872f183b78933c7a = L.marker(
+            [30.2706985063983, -97.72865329186209],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_01f30bdd8e244a28930a95f49235e062 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bdc347bc15434a41b041500f82310ce8 = $('<div id="html_bdc347bc15434a41b041500f82310ce8" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $1000, <b>Rooms</b>:5, <b>Distance</b> : 1.45 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/733203?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_01f30bdd8e244a28930a95f49235e062.setContent(html_bdc347bc15434a41b041500f82310ce8);
+            
+
+            marker_79a42a654e12469d872f183b78933c7a.bindPopup(popup_01f30bdd8e244a28930a95f49235e062)
+            ;
+
+            
+        
+    
+        var marker_793f34ccd3fe4e0a9ef1544b1a57c260 = L.marker(
+            [30.2723490892175, -97.72514019490428],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_830df3e76e7f45b89426e1aec226c796 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a9574f9e6fc24bacbf95319386942980 = $('<div id="html_a9574f9e6fc24bacbf95319386942980" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $95, <b>Rooms</b>:1, <b>Distance</b> : 1.79 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/329306?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_830df3e76e7f45b89426e1aec226c796.setContent(html_a9574f9e6fc24bacbf95319386942980);
+            
+
+            marker_793f34ccd3fe4e0a9ef1544b1a57c260.bindPopup(popup_830df3e76e7f45b89426e1aec226c796)
+            ;
+
+            
+        
+    
+        var marker_d2d7df073b744411b887bed7b0cbcaf5 = L.marker(
+            [30.265865937180802, -97.7399196797612],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_17ba78054ea0443bb645d69457ffb60c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f4afd290b848409b88273a517ae1017c = $('<div id="html_f4afd290b848409b88273a517ae1017c" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $295, <b>Rooms</b>:3, <b>Distance</b> : 0.69 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/690984?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_17ba78054ea0443bb645d69457ffb60c.setContent(html_f4afd290b848409b88273a517ae1017c);
+            
+
+            marker_d2d7df073b744411b887bed7b0cbcaf5.bindPopup(popup_17ba78054ea0443bb645d69457ffb60c)
+            ;
+
+            
+        
+    
+        var marker_aa2145110c5f46f89806d1a4d995ec4b = L.marker(
+            [30.2657110832258, -97.7397057204122],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9933414736e445c0b3744153a7805090 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d1f8fbadba1448a6be75e25de660d492 = $('<div id="html_d1f8fbadba1448a6be75e25de660d492" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $175, <b>Rooms</b>:1, <b>Distance</b> : 0.71 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16704551?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_9933414736e445c0b3744153a7805090.setContent(html_d1f8fbadba1448a6be75e25de660d492);
+            
+
+            marker_aa2145110c5f46f89806d1a4d995ec4b.bindPopup(popup_9933414736e445c0b3744153a7805090)
+            ;
+
+            
+        
+    
+        var marker_9baaa28b5ad84f6a8e04640faa451fae = L.marker(
+            [30.2876399146006, -97.74840561479701],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_dcf55648dc424e7388b65c281a71c9f5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c8fbd9cc26924ce685a0546b981b0704 = $('<div id="html_c8fbd9cc26924ce685a0546b981b0704" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $48, <b>Rooms</b>:Studio, <b>Distance</b> : 1.89 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18912622?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_dcf55648dc424e7388b65c281a71c9f5.setContent(html_c8fbd9cc26924ce685a0546b981b0704);
+            
+
+            marker_9baaa28b5ad84f6a8e04640faa451fae.bindPopup(popup_dcf55648dc424e7388b65c281a71c9f5)
+            ;
+
+            
+        
+    
+        var marker_914d6d9fc16f4f80a74ca4108088a920 = L.marker(
+            [30.2649987038122, -97.74260592299679],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a3bb6212c1a341bda2dd9f7864889368 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d2aaaf8dcaf3467b9fde0c022a307620 = $('<div id="html_d2aaaf8dcaf3467b9fde0c022a307620" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $299, <b>Rooms</b>:2, <b>Distance</b> : 0.69 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16085848?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_a3bb6212c1a341bda2dd9f7864889368.setContent(html_d2aaaf8dcaf3467b9fde0c022a307620);
+            
+
+            marker_914d6d9fc16f4f80a74ca4108088a920.bindPopup(popup_a3bb6212c1a341bda2dd9f7864889368)
+            ;
+
+            
+        
+    
+        var marker_e0fda9f2303b400f82f0d6c09a545975 = L.marker(
+            [30.2597552684203, -97.75364419160358],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e1f75333cbef4ff0abf83fb8fda57b0f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6949418f5fdc40c48502e18cb445330b = $('<div id="html_6949418f5fdc40c48502e18cb445330b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $134, <b>Rooms</b>:1, <b>Distance</b> : 1.58 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1342654?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_e1f75333cbef4ff0abf83fb8fda57b0f.setContent(html_6949418f5fdc40c48502e18cb445330b);
+            
+
+            marker_e0fda9f2303b400f82f0d6c09a545975.bindPopup(popup_e1f75333cbef4ff0abf83fb8fda57b0f)
+            ;
+
+            
+        
+    
+        var marker_157c084738ce4a089c0f2f350c067d21 = L.marker(
+            [30.2851531130717, -97.75028554673821],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a508109291d9458893618a6db5b33285 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_98e5667ccd384b6b9dd2a904aae64cea = $('<div id="html_98e5667ccd384b6b9dd2a904aae64cea" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $70, <b>Rooms</b>:1, <b>Distance</b> : 1.68 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17421763?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_a508109291d9458893618a6db5b33285.setContent(html_98e5667ccd384b6b9dd2a904aae64cea);
+            
+
+            marker_157c084738ce4a089c0f2f350c067d21.bindPopup(popup_a508109291d9458893618a6db5b33285)
+            ;
+
+            
+        
+    
+        var marker_4d0c334e945f4e14b9629ed2e9e8c159 = L.marker(
+            [30.2810300847091, -97.7399309827742],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_59c61472d9c447b19e421835ed58fc2d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7b620c6197c7497c8172e69d852c7de5 = $('<div id="html_7b620c6197c7497c8172e69d852c7de5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 1.16 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19016759?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_59c61472d9c447b19e421835ed58fc2d.setContent(html_7b620c6197c7497c8172e69d852c7de5);
+            
+
+            marker_4d0c334e945f4e14b9629ed2e9e8c159.bindPopup(popup_59c61472d9c447b19e421835ed58fc2d)
+            ;
+
+            
+        
+    
+        var marker_205bdf0234cf4812b5fb1c67d287d5cd = L.marker(
+            [30.279016205815, -97.7612114574182],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_1c9fbeee19c14db48f4b1b2a669c68a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5c31b5bd96314167a7ac894b54df7518 = $('<div id="html_5c31b5bd96314167a7ac894b54df7518" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $229, <b>Rooms</b>:2, <b>Distance</b> : 1.9 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/12538954?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_1c9fbeee19c14db48f4b1b2a669c68a5.setContent(html_5c31b5bd96314167a7ac894b54df7518);
+            
+
+            marker_205bdf0234cf4812b5fb1c67d287d5cd.bindPopup(popup_1c9fbeee19c14db48f4b1b2a669c68a5)
+            ;
+
+            
+        
+    
+        var marker_d5ae7cf7befc403fa426cc3c20b66974 = L.marker(
+            [30.2833113002934, -97.7588669459401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_3b58a96b0bc040d2bb68005fc1e66d5f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4ceed5a1d9b54216a9a43e2779cad770 = $('<div id="html_4ceed5a1d9b54216a9a43e2779cad770" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:2, <b>Distance</b> : 1.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15485472?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_3b58a96b0bc040d2bb68005fc1e66d5f.setContent(html_4ceed5a1d9b54216a9a43e2779cad770);
+            
+
+            marker_d5ae7cf7befc403fa426cc3c20b66974.bindPopup(popup_3b58a96b0bc040d2bb68005fc1e66d5f)
+            ;
+
+            
+        
+    
+        var marker_0f88bd4b552c4a08a09c67fc02d24538 = L.marker(
+            [30.271717058195602, -97.7273445755626],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_1cd29531bbeb4af992303068ce302644 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d4730f8c05b2417c8d0c68348cebeb98 = $('<div id="html_d4730f8c05b2417c8d0c68348cebeb98" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $37, <b>Rooms</b>:1, <b>Distance</b> : 1.58 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/14198986?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_1cd29531bbeb4af992303068ce302644.setContent(html_d4730f8c05b2417c8d0c68348cebeb98);
+            
+
+            marker_0f88bd4b552c4a08a09c67fc02d24538.bindPopup(popup_1cd29531bbeb4af992303068ce302644)
+            ;
+
+            
+        
+    
+        var marker_93596051a412426abc3e1e70994aed9b = L.marker(
+            [30.2768876551366, -97.75241561603849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_261d113a2f9e4cf09907ecfbe2165d55 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_88f9f113e55a40639884f6c21bffd8d6 = $('<div id="html_88f9f113e55a40639884f6c21bffd8d6" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $149, <b>Rooms</b>:1, <b>Distance</b> : 1.05 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/458217?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_261d113a2f9e4cf09907ecfbe2165d55.setContent(html_88f9f113e55a40639884f6c21bffd8d6);
+            
+
+            marker_93596051a412426abc3e1e70994aed9b.bindPopup(popup_261d113a2f9e4cf09907ecfbe2165d55)
+            ;
+
+            
+        
+    
+        var marker_0c83f94cf526445596b31c2d890b24a0 = L.marker(
+            [30.262188677859395, -97.76056739676241],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f89555324b8444d4817e8249c69e1121 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d3db646320e84847baa98014f20f1fef = $('<div id="html_d3db646320e84847baa98014f20f1fef" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $69, <b>Rooms</b>:1, <b>Distance</b> : 1.9 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/12364718?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_f89555324b8444d4817e8249c69e1121.setContent(html_d3db646320e84847baa98014f20f1fef);
+            
+
+            marker_0c83f94cf526445596b31c2d890b24a0.bindPopup(popup_f89555324b8444d4817e8249c69e1121)
+            ;
+
+            
+        
+    
+        var marker_dff6fcf054a24968ad76b25b5f5dfaed = L.marker(
+            [30.267782316989898, -97.7456278570408],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_da2b6d4fb2e84b5cb6612d4906a8aff0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6a3d05e2f30484880dd93a4a85a4e92 = $('<div id="html_e6a3d05e2f30484880dd93a4a85a4e92" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:2, <b>Distance</b> : 0.41 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/323733?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_da2b6d4fb2e84b5cb6612d4906a8aff0.setContent(html_e6a3d05e2f30484880dd93a4a85a4e92);
+            
+
+            marker_dff6fcf054a24968ad76b25b5f5dfaed.bindPopup(popup_da2b6d4fb2e84b5cb6612d4906a8aff0)
+            ;
+
+            
+        
+    
+        var marker_50bbe1f2da3e4690a2740c1982476b93 = L.marker(
+            [30.261115947777, -97.7344828448813],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_35ba4f32eeb24e95919e0340e7ff7f43 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec297b0669dd45f9bf6a91990b362b3f = $('<div id="html_ec297b0669dd45f9bf6a91990b362b3f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 1.42 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5456?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_35ba4f32eeb24e95919e0340e7ff7f43.setContent(html_ec297b0669dd45f9bf6a91990b362b3f);
+            
+
+            marker_50bbe1f2da3e4690a2740c1982476b93.bindPopup(popup_35ba4f32eeb24e95919e0340e7ff7f43)
+            ;
+
+            
+        
+    
+        var marker_2fa42ab3c9334e639629f7c47ccb1782 = L.marker(
+            [30.278296323148798, -97.7529642062388],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_c12c7ec8e582432abe1150887d512c7c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8a79e98f95484759a2939f5dbf352d46 = $('<div id="html_8a79e98f95484759a2939f5dbf352d46" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $118, <b>Rooms</b>:Studio, <b>Distance</b> : 1.19 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/6570493?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_c12c7ec8e582432abe1150887d512c7c.setContent(html_8a79e98f95484759a2939f5dbf352d46);
+            
+
+            marker_2fa42ab3c9334e639629f7c47ccb1782.bindPopup(popup_c12c7ec8e582432abe1150887d512c7c)
+            ;
+
+            
+        
+    
+        var marker_f5897ee073db41dfa6a486d900ec81d9 = L.marker(
+            [30.283347308846697, -97.75813296358558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_46df07b57e924f45825b8b3be32f1b6c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bdece92782e445b2885a7bf8cdfd3d50 = $('<div id="html_bdece92782e445b2885a7bf8cdfd3d50" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $72, <b>Rooms</b>:1, <b>Distance</b> : 1.94 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/11581222?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_46df07b57e924f45825b8b3be32f1b6c.setContent(html_bdece92782e445b2885a7bf8cdfd3d50);
+            
+
+            marker_f5897ee073db41dfa6a486d900ec81d9.bindPopup(popup_46df07b57e924f45825b8b3be32f1b6c)
+            ;
+
+            
+        
+    
+        var marker_75484e028f5742759b805b4e2ef89075 = L.marker(
+            [30.2624015890692, -97.7324092928069],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ec18e180c980487e81a8095c85093356 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b957f82ab1c4bbabd4e26d2c38b1beb = $('<div id="html_3b957f82ab1c4bbabd4e26d2c38b1beb" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $600, <b>Rooms</b>:4, <b>Distance</b> : 1.45 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2174970?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_ec18e180c980487e81a8095c85093356.setContent(html_3b957f82ab1c4bbabd4e26d2c38b1beb);
+            
+
+            marker_75484e028f5742759b805b4e2ef89075.bindPopup(popup_ec18e180c980487e81a8095c85093356)
+            ;
+
+            
+        
+    
+        var marker_88fc7c10b15143948f8c300dd9387cf8 = L.marker(
+            [30.275484886441802, -97.726282028393],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_24faa2cdc1704c34b9a285092d022215 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_566b8ee4ae0e4a9da753001e162ed151 = $('<div id="html_566b8ee4ae0e4a9da753001e162ed151" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $133, <b>Rooms</b>:1, <b>Distance</b> : 1.74 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2266768?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_24faa2cdc1704c34b9a285092d022215.setContent(html_566b8ee4ae0e4a9da753001e162ed151);
+            
+
+            marker_88fc7c10b15143948f8c300dd9387cf8.bindPopup(popup_24faa2cdc1704c34b9a285092d022215)
+            ;
+
+            
+        
+    
+        var marker_5d67d77f3e6d42fd94cddcb7d05806c8 = L.marker(
+            [30.2785773995891, -97.74782012912159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b35f617c426740ac86a238502fe19997 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c716a0dd1e54620a70dd8800e499cbd = $('<div id="html_6c716a0dd1e54620a70dd8800e499cbd" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $150, <b>Rooms</b>:1, <b>Distance</b> : 0.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4171708?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_b35f617c426740ac86a238502fe19997.setContent(html_6c716a0dd1e54620a70dd8800e499cbd);
+            
+
+            marker_5d67d77f3e6d42fd94cddcb7d05806c8.bindPopup(popup_b35f617c426740ac86a238502fe19997)
+            ;
+
+            
+        
+    
+        var marker_f2f0e11ddd9e4d42a13c42447190b89a = L.marker(
+            [30.2572079814882, -97.75563315849729],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_cae060c4e5e144d8a436eec0688d9e84 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0df1db3de3e547a6a5606744ec7afcc3 = $('<div id="html_0df1db3de3e547a6a5606744ec7afcc3" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $145, <b>Rooms</b>:1, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/300574?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_cae060c4e5e144d8a436eec0688d9e84.setContent(html_0df1db3de3e547a6a5606744ec7afcc3);
+            
+
+            marker_f2f0e11ddd9e4d42a13c42447190b89a.bindPopup(popup_cae060c4e5e144d8a436eec0688d9e84)
+            ;
+
+            
+        
+    
+        var marker_b51dec89c822496c986b65ffba840461 = L.marker(
+            [30.2659916269128, -97.73534517544658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_bf742c5a7523480280064a8d28722098 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b39f1b67386644b1b125fa2f2c96ee38 = $('<div id="html_b39f1b67386644b1b125fa2f2c96ee38" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $349, <b>Rooms</b>:2, <b>Distance</b> : 0.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15886011?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_bf742c5a7523480280064a8d28722098.setContent(html_b39f1b67386644b1b125fa2f2c96ee38);
+            
+
+            marker_b51dec89c822496c986b65ffba840461.bindPopup(popup_bf742c5a7523480280064a8d28722098)
+            ;
+
+            
+        
+    
+        var marker_5a6b47b99b12402cb048c9f700eb7d87 = L.marker(
+            [30.274477006876502, -97.72692243082199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_7e89ce389c0a4422aea1351dfc009952 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ac6a057022ff48f5a5dc8a360ce7e06c = $('<div id="html_ac6a057022ff48f5a5dc8a360ce7e06c" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $79, <b>Rooms</b>:1, <b>Distance</b> : 1.66 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/304808?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_7e89ce389c0a4422aea1351dfc009952.setContent(html_ac6a057022ff48f5a5dc8a360ce7e06c);
+            
+
+            marker_5a6b47b99b12402cb048c9f700eb7d87.bindPopup(popup_7e89ce389c0a4422aea1351dfc009952)
+            ;
+
+            
+        
+    
+        var marker_f8dffb30d4a54af3bd8aee09298d3cd4 = L.marker(
+            [30.260198533344997, -97.7326855958658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_06316b5ce60a436b9d2b5c4795208987 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f7369a8b6e6a4cc68ad08db332a42c6e = $('<div id="html_f7369a8b6e6a4cc68ad08db332a42c6e" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $113, <b>Rooms</b>:Studio, <b>Distance</b> : 1.61 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1499714?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_06316b5ce60a436b9d2b5c4795208987.setContent(html_f7369a8b6e6a4cc68ad08db332a42c6e);
+            
+
+            marker_f8dffb30d4a54af3bd8aee09298d3cd4.bindPopup(popup_06316b5ce60a436b9d2b5c4795208987)
+            ;
+
+            
+        
+    
+        var marker_ac9fb9d8c3b8482f8a8cfdc9bbb5ff86 = L.marker(
+            [30.2792676133508, -97.7515836553973],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b13fa1be44334f9e951fdaadd821c8f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad79d30290f64c6c83b68afcbae9694a = $('<div id="html_ad79d30290f64c6c83b68afcbae9694a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $102, <b>Rooms</b>:Studio, <b>Distance</b> : 1.18 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/7435259?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_b13fa1be44334f9e951fdaadd821c8f1.setContent(html_ad79d30290f64c6c83b68afcbae9694a);
+            
+
+            marker_ac9fb9d8c3b8482f8a8cfdc9bbb5ff86.bindPopup(popup_b13fa1be44334f9e951fdaadd821c8f1)
+            ;
+
+            
+        
+    
+        var marker_42649a0a5e6d4f62b76f66418fe17489 = L.marker(
+            [30.2648048221581, -97.73428325945801],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a187bd3ca64943329debeb319fc0f6ef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_20f436f776f3410f845db7635944ac6a = $('<div id="html_20f436f776f3410f845db7635944ac6a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $1400, <b>Rooms</b>:3, <b>Distance</b> : 1.15 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/319759?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_a187bd3ca64943329debeb319fc0f6ef.setContent(html_20f436f776f3410f845db7635944ac6a);
+            
+
+            marker_42649a0a5e6d4f62b76f66418fe17489.bindPopup(popup_a187bd3ca64943329debeb319fc0f6ef)
+            ;
+
+            
+        
+    
+        var marker_2cf77747894a4271a7506d0b78021f0e = L.marker(
+            [30.273943952790898, -97.7304314753081],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_0394ff7674bd4cbdb05eba6d70df0e50 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1897ffb06f7142f78452d97436e051b7 = $('<div id="html_1897ffb06f7142f78452d97436e051b7" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $364, <b>Rooms</b>:2, <b>Distance</b> : 1.31 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5396676?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_0394ff7674bd4cbdb05eba6d70df0e50.setContent(html_1897ffb06f7142f78452d97436e051b7);
+            
+
+            marker_2cf77747894a4271a7506d0b78021f0e.bindPopup(popup_0394ff7674bd4cbdb05eba6d70df0e50)
+            ;
+
+            
+        
+    
+        var marker_7bccf0b032ca40e5bdc1106ac3407dc6 = L.marker(
+            [30.256306862416302, -97.7330574204099],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f772f2a59a474f88b4d7a6a81f0f6911 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3ffc70949966403a86288fbc5bbd5059 = $('<div id="html_3ffc70949966403a86288fbc5bbd5059" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $399, <b>Rooms</b>:3, <b>Distance</b> : 1.94 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4814446?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_f772f2a59a474f88b4d7a6a81f0f6911.setContent(html_3ffc70949966403a86288fbc5bbd5059);
+            
+
+            marker_7bccf0b032ca40e5bdc1106ac3407dc6.bindPopup(popup_f772f2a59a474f88b4d7a6a81f0f6911)
+            ;
+
+            
+        
+    
+        var marker_e82ed234d2d04443bd693a94dda276ef = L.marker(
+            [30.2833113002934, -97.7588669459401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_4ef57ed3a57043ba84e19702c05f3ed1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_774db6efccef4773a3ee17ef1deeea52 = $('<div id="html_774db6efccef4773a3ee17ef1deeea52" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:2, <b>Distance</b> : 1.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15485472?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_4ef57ed3a57043ba84e19702c05f3ed1.setContent(html_774db6efccef4773a3ee17ef1deeea52);
+            
+
+            marker_e82ed234d2d04443bd693a94dda276ef.bindPopup(popup_4ef57ed3a57043ba84e19702c05f3ed1)
+            ;
+
+            
+        
+    
+        var marker_df0a8604a63f4a2d9a562052969e3fac = L.marker(
+            [30.272516963741303, -97.75426201393991],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e0789df6a641427db0199a6cec3b728d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f8eeb637d57f4ee49a2fb9c3bc1ff067 = $('<div id="html_f8eeb637d57f4ee49a2fb9c3bc1ff067" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $89, <b>Rooms</b>:1, <b>Distance</b> : 1.03 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5852265?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_e0789df6a641427db0199a6cec3b728d.setContent(html_f8eeb637d57f4ee49a2fb9c3bc1ff067);
+            
+
+            marker_df0a8604a63f4a2d9a562052969e3fac.bindPopup(popup_e0789df6a641427db0199a6cec3b728d)
+            ;
+
+            
+        
+    
+        var marker_0c59efbaeccc47c3b0c629966b40bf0d = L.marker(
+            [30.266022980983, -97.74292591098958],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_3df34c3348be4f5f9311cc71e4c5c8a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1492ab8f59e34281ada6035c8063c967 = $('<div id="html_1492ab8f59e34281ada6035c8063c967" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 0.57 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4111528?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_3df34c3348be4f5f9311cc71e4c5c8a1.setContent(html_1492ab8f59e34281ada6035c8063c967);
+            
+
+            marker_0c59efbaeccc47c3b0c629966b40bf0d.bindPopup(popup_3df34c3348be4f5f9311cc71e4c5c8a1)
+            ;
+
+            
+        
+    
+        var marker_0092816eb4424d6190bd0b6b445f7326 = L.marker(
+            [30.2699307192582, -97.74357601851091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f1f6ed8295634a92b728f84ddf262a17 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_41a18ea8a10140789afcc451c8811b06 = $('<div id="html_41a18ea8a10140789afcc451c8811b06" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:1, <b>Distance</b> : 0.13 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/961883?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_f1f6ed8295634a92b728f84ddf262a17.setContent(html_41a18ea8a10140789afcc451c8811b06);
+            
+
+            marker_0092816eb4424d6190bd0b6b445f7326.bindPopup(popup_f1f6ed8295634a92b728f84ddf262a17)
+            ;
+
+            
+        
+    
+        var marker_f0fdd46586f1468586770ca196ad665f = L.marker(
+            [30.266087554781798, -97.74175163314501],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_4124df9bf87f40ea9f39bb1f041a1df1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e67c7bd5267b43fab6d73acab185980c = $('<div id="html_e67c7bd5267b43fab6d73acab185980c" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $200, <b>Rooms</b>:1, <b>Distance</b> : 0.59 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/943528?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_4124df9bf87f40ea9f39bb1f041a1df1.setContent(html_e67c7bd5267b43fab6d73acab185980c);
+            
+
+            marker_f0fdd46586f1468586770ca196ad665f.bindPopup(popup_4124df9bf87f40ea9f39bb1f041a1df1)
+            ;
+
+            
+        
+    
+        var marker_ef93bbab83f542daab37419bf1b0281c = L.marker(
+            [30.2808644754762, -97.7452914058877],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_4d18d77da10d49a4a036559465987987 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d51b46ff93da4a609b946da763c37ab1 = $('<div id="html_d51b46ff93da4a609b946da763c37ab1" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $130, <b>Rooms</b>:Studio, <b>Distance</b> : 1.09 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/951272?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_4d18d77da10d49a4a036559465987987.setContent(html_d51b46ff93da4a609b946da763c37ab1);
+            
+
+            marker_ef93bbab83f542daab37419bf1b0281c.bindPopup(popup_4d18d77da10d49a4a036559465987987)
+            ;
+
+            
+        
+    
+        var marker_b34a82f1c7ac4426a2dc7859ee637dfa = L.marker(
+            [30.268321180934898, -97.7315099914493],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_1332f18c99364403a81b63f3213af170 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_14bf9311af534afd911e0ce69a0adf70 = $('<div id="html_14bf9311af534afd911e0ce69a0adf70" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $119, <b>Rooms</b>:1, <b>Distance</b> : 1.21 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1875121?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_1332f18c99364403a81b63f3213af170.setContent(html_14bf9311af534afd911e0ce69a0adf70);
+            
+
+            marker_b34a82f1c7ac4426a2dc7859ee637dfa.bindPopup(popup_1332f18c99364403a81b63f3213af170)
+            ;
+
+            
+        
+    
+        var marker_62d8d6b21ad84c67bf0fbfd1933bc863 = L.marker(
+            [30.266665187932897, -97.7339466339838],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_825ac829477f47689eb546b147269e71 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_628dff67bdd44033804f27671bf6eaa9 = $('<div id="html_628dff67bdd44033804f27671bf6eaa9" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $168, <b>Rooms</b>:1, <b>Distance</b> : 1.06 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2967570?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_825ac829477f47689eb546b147269e71.setContent(html_628dff67bdd44033804f27671bf6eaa9);
+            
+
+            marker_62d8d6b21ad84c67bf0fbfd1933bc863.bindPopup(popup_825ac829477f47689eb546b147269e71)
+            ;
+
+            
+        
+    
+        var marker_e956df061b8f468c83a3eb1d8d25d424 = L.marker(
+            [30.2792676133508, -97.7515836553973],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_cfa4a07d3fd443438b7fe0ae34e91dfd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_58c8a006f2e346cfacb654aaf5a3201e = $('<div id="html_58c8a006f2e346cfacb654aaf5a3201e" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $102, <b>Rooms</b>:Studio, <b>Distance</b> : 1.18 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/7435259?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_cfa4a07d3fd443438b7fe0ae34e91dfd.setContent(html_58c8a006f2e346cfacb654aaf5a3201e);
+            
+
+            marker_e956df061b8f468c83a3eb1d8d25d424.bindPopup(popup_cfa4a07d3fd443438b7fe0ae34e91dfd)
+            ;
+
+            
+        
+    
+        var marker_c5312d90023e455bb81e4f8d1f9940cb = L.marker(
+            [30.2809532633697, -97.7440860877236],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ecfeba99ab8444a1bac8c27bb3ef319e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d4e57203334442a28c368b440b35c625 = $('<div id="html_d4e57203334442a28c368b440b35c625" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $132, <b>Rooms</b>:1, <b>Distance</b> : 1.09 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17160578?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_ecfeba99ab8444a1bac8c27bb3ef319e.setContent(html_d4e57203334442a28c368b440b35c625);
+            
+
+            marker_c5312d90023e455bb81e4f8d1f9940cb.bindPopup(popup_ecfeba99ab8444a1bac8c27bb3ef319e)
+            ;
+
+            
+        
+    
+        var marker_0ba05a950e0f41bbb1861825d2e1b2be = L.marker(
+            [30.2727531311685, -97.72729139645409],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_57e16f4536eb42af8cc7a3e4dd636fb9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d1c8bc8a47ce453f96af51eafda1a75a = $('<div id="html_d1c8bc8a47ce453f96af51eafda1a75a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $405, <b>Rooms</b>:3, <b>Distance</b> : 1.59 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/3760974?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_57e16f4536eb42af8cc7a3e4dd636fb9.setContent(html_d1c8bc8a47ce453f96af51eafda1a75a);
+            
+
+            marker_0ba05a950e0f41bbb1861825d2e1b2be.bindPopup(popup_57e16f4536eb42af8cc7a3e4dd636fb9)
+            ;
+
+            
+        
+    
+        var marker_baee2102d0e24e5b9ae0b51c97918178 = L.marker(
+            [30.278296323148798, -97.7529642062388],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_17ea4f84adf84267a7fb9b1b93cd8a4d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e45a611349e749b5a2680c7fa8c9faab = $('<div id="html_e45a611349e749b5a2680c7fa8c9faab" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $118, <b>Rooms</b>:Studio, <b>Distance</b> : 1.19 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/6570493?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_17ea4f84adf84267a7fb9b1b93cd8a4d.setContent(html_e45a611349e749b5a2680c7fa8c9faab);
+            
+
+            marker_baee2102d0e24e5b9ae0b51c97918178.bindPopup(popup_17ea4f84adf84267a7fb9b1b93cd8a4d)
+            ;
+
+            
+        
+    
+        var marker_e2e7e2d7ad39445d9597a5d0d8226e4a = L.marker(
+            [30.280043927786398, -97.74563049222022],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_93390e43e7b542e99e3b98b7b63fed41 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_054e75bf98b84f4b94008a85c00026cd = $('<div id="html_054e75bf98b84f4b94008a85c00026cd" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $144, <b>Rooms</b>:1, <b>Distance</b> : 1.01 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/522136?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_93390e43e7b542e99e3b98b7b63fed41.setContent(html_054e75bf98b84f4b94008a85c00026cd);
+            
+
+            marker_e2e7e2d7ad39445d9597a5d0d8226e4a.bindPopup(popup_93390e43e7b542e99e3b98b7b63fed41)
+            ;
+
+            
+        
+    
+        var marker_2d822e4697ab4d798e306c1bcf6cbcd4 = L.marker(
+            [30.266591178295396, -97.7329755650586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_0ea976643ed24df38c05ee1f2668c2c1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_369d767a8293432594728d284e3072f4 = $('<div id="html_369d767a8293432594728d284e3072f4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $219, <b>Rooms</b>:2, <b>Distance</b> : 1.15 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/347736?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_0ea976643ed24df38c05ee1f2668c2c1.setContent(html_369d767a8293432594728d284e3072f4);
+            
+
+            marker_2d822e4697ab4d798e306c1bcf6cbcd4.bindPopup(popup_0ea976643ed24df38c05ee1f2668c2c1)
+            ;
+
+            
+        
+    
+        var marker_eb85739161d54e9483a745699c1802b0 = L.marker(
+            [30.2570623159759, -97.73358067498691],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_be0abc80358a480fb03f93453765af04 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_10f09a5f6f6b4c919a2de8a27669e7b7 = $('<div id="html_10f09a5f6f6b4c919a2de8a27669e7b7" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $109, <b>Rooms</b>:2, <b>Distance</b> : 1.84 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1250575?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_be0abc80358a480fb03f93453765af04.setContent(html_10f09a5f6f6b4c919a2de8a27669e7b7);
+            
+
+            marker_eb85739161d54e9483a745699c1802b0.bindPopup(popup_be0abc80358a480fb03f93453765af04)
+            ;
+
+            
+        
+    
+        var marker_b154893175454ad58e18a950ee5f2dcc = L.marker(
+            [30.271621404808197, -97.74792006993559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f99628d5ba6f4afeb63f6444cb6ff3d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_601b434ccb104a41b130932aa5e1f2a4 = $('<div id="html_601b434ccb104a41b130932aa5e1f2a4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $129, <b>Rooms</b>:1, <b>Distance</b> : 0.41 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18914845?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_f99628d5ba6f4afeb63f6444cb6ff3d3.setContent(html_601b434ccb104a41b130932aa5e1f2a4);
+            
+
+            marker_b154893175454ad58e18a950ee5f2dcc.bindPopup(popup_f99628d5ba6f4afeb63f6444cb6ff3d3)
+            ;
+
+            
+        
+    
+        var marker_6d3f8e9e6eb7429e878e62397927478b = L.marker(
+            [30.265328966111603, -97.76251971115428],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_c3643789459d4346940acd8a927eada5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_770b489a0f8d4be086f5f9d0ce3d7731 = $('<div id="html_770b489a0f8d4be086f5f9d0ce3d7731" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $49, <b>Rooms</b>:1, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/8654439?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_c3643789459d4346940acd8a927eada5.setContent(html_770b489a0f8d4be086f5f9d0ce3d7731);
+            
+
+            marker_6d3f8e9e6eb7429e878e62397927478b.bindPopup(popup_c3643789459d4346940acd8a927eada5)
+            ;
+
+            
+        
+    
+        var marker_57ce597496d840fea49614ae11b94b6c = L.marker(
+            [30.2884060244134, -97.7436700675856],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_52c361852dff4f858a40486d6654129e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_32a1bfad2d3642dd92aa8d952428b6fa = $('<div id="html_32a1bfad2d3642dd92aa8d952428b6fa" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $55, <b>Rooms</b>:Studio, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19068268?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_52c361852dff4f858a40486d6654129e.setContent(html_32a1bfad2d3642dd92aa8d952428b6fa);
+            
+
+            marker_57ce597496d840fea49614ae11b94b6c.bindPopup(popup_52c361852dff4f858a40486d6654129e)
+            ;
+
+            
+        
+    
+        var marker_b4e6f148aa724b84ae7742e14ea2ae10 = L.marker(
+            [30.284525487607798, -97.74467614633791],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b880d89441904e198f5110d022ede398 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8dc3e1f210114c04bd51b4e11362e28e = $('<div id="html_8dc3e1f210114c04bd51b4e11362e28e" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $30, <b>Rooms</b>:1, <b>Distance</b> : 1.49 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/14858443?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_b880d89441904e198f5110d022ede398.setContent(html_8dc3e1f210114c04bd51b4e11362e28e);
+            
+
+            marker_b4e6f148aa724b84ae7742e14ea2ae10.bindPopup(popup_b880d89441904e198f5110d022ede398)
+            ;
+
+            
+        
+    
+        var marker_52194e1426e842ee8bd34eba499b17dc = L.marker(
+            [30.270059962551603, -97.7494661579137],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_0a4061fa65534460bd382a550dbd10a3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5995c3ab38514adc8e49c3634662c77d = $('<div id="html_5995c3ab38514adc8e49c3634662c77d" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $151, <b>Rooms</b>:1, <b>Distance</b> : 0.57 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18926529?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_0a4061fa65534460bd382a550dbd10a3.setContent(html_5995c3ab38514adc8e49c3634662c77d);
+            
+
+            marker_52194e1426e842ee8bd34eba499b17dc.bindPopup(popup_0a4061fa65534460bd382a550dbd10a3)
+            ;
+
+            
+        
+    
+        var marker_812ddfe6f04d4c629eca2d769e99bd4c = L.marker(
+            [30.286397522613, -97.7489407492416],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_2ef50ac057d84371b1a2b03a00618c91 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dbd8e964ae394526adfc4f7cdd23cb97 = $('<div id="html_dbd8e964ae394526adfc4f7cdd23cb97" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $60, <b>Rooms</b>:2, <b>Distance</b> : 1.77 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17611669?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_2ef50ac057d84371b1a2b03a00618c91.setContent(html_dbd8e964ae394526adfc4f7cdd23cb97);
+            
+
+            marker_812ddfe6f04d4c629eca2d769e99bd4c.bindPopup(popup_2ef50ac057d84371b1a2b03a00618c91)
+            ;
+
+            
+        
+    
+        var marker_670c97ff21eb4c16927b9b17df4b5a63 = L.marker(
+            [30.2708361983106, -97.7414312619996],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a617a13646864047a26b783315604ed4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_57d5569b50644be09a94807cd3fda3e1 = $('<div id="html_57d5569b50644be09a94807cd3fda3e1" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:1, <b>Distance</b> : 0.22 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/669469?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_a617a13646864047a26b783315604ed4.setContent(html_57d5569b50644be09a94807cd3fda3e1);
+            
+
+            marker_670c97ff21eb4c16927b9b17df4b5a63.bindPopup(popup_a617a13646864047a26b783315604ed4)
+            ;
+
+            
+        
+    
+        var marker_7ed5827eeb134c1dab2476d327e8dadc = L.marker(
+            [30.263598379166, -97.7420374650896],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f9b5c48fb3294936becc539b4dfa82ac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_77e2037d2daa4a5ca0da3d9a8da2f9b7 = $('<div id="html_77e2037d2daa4a5ca0da3d9a8da2f9b7" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $149, <b>Rooms</b>:1, <b>Distance</b> : 0.85 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/383689?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_f9b5c48fb3294936becc539b4dfa82ac.setContent(html_77e2037d2daa4a5ca0da3d9a8da2f9b7);
+            
+
+            marker_7ed5827eeb134c1dab2476d327e8dadc.bindPopup(popup_f9b5c48fb3294936becc539b4dfa82ac)
+            ;
+
+            
+        
+    
+        var marker_ade744917db746afbbef648a251852bf = L.marker(
+            [30.264161540274703, -97.7413510693055],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_61f64ba10ff146b99dfe95181d060238 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_df6f6e91a9b145ffbfabfc3884f4336c = $('<div id="html_df6f6e91a9b145ffbfabfc3884f4336c" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 0.8 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5438705?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_61f64ba10ff146b99dfe95181d060238.setContent(html_df6f6e91a9b145ffbfabfc3884f4336c);
+            
+
+            marker_ade744917db746afbbef648a251852bf.bindPopup(popup_61f64ba10ff146b99dfe95181d060238)
+            ;
+
+            
+        
+    
+        var marker_5404f374e30f409b9c9e21f38d455674 = L.marker(
+            [30.276368388787898, -97.75969614882221],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_8e08953c89a34cf98c9ab368a0cede82 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c263edf81f804c5bbb040fc75d46eec3 = $('<div id="html_c263edf81f804c5bbb040fc75d46eec3" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $136, <b>Rooms</b>:Studio, <b>Distance</b> : 1.65 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2010358?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_8e08953c89a34cf98c9ab368a0cede82.setContent(html_c263edf81f804c5bbb040fc75d46eec3);
+            
+
+            marker_5404f374e30f409b9c9e21f38d455674.bindPopup(popup_8e08953c89a34cf98c9ab368a0cede82)
+            ;
+
+            
+        
+    
+        var marker_8ce373cf94fc4427a829b1a8f4909b75 = L.marker(
+            [30.2721341360948, -97.7256809889267],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_7f5b28d25c2d484c870f3568822963dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1455716db4f740b4b7d1b93ffa8f04fb = $('<div id="html_1455716db4f740b4b7d1b93ffa8f04fb" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 1.74 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/576243?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_7f5b28d25c2d484c870f3568822963dd.setContent(html_1455716db4f740b4b7d1b93ffa8f04fb);
+            
+
+            marker_8ce373cf94fc4427a829b1a8f4909b75.bindPopup(popup_7f5b28d25c2d484c870f3568822963dd)
+            ;
+
+            
+        
+    
+        var marker_c315997bd072404abf636f44243d6e47 = L.marker(
+            [30.270658416676998, -97.724475102496],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6e10d002f5b14ba2bfaa3d980f06455f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b1c9541bbd04636a4f3bfe212ea7ab4 = $('<div id="html_3b1c9541bbd04636a4f3bfe212ea7ab4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $95, <b>Rooms</b>:1, <b>Distance</b> : 1.85 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/3424259?location=Colorado%20River%2C%20TX ">here</a></div>')[0];
+                popup_6e10d002f5b14ba2bfaa3d980f06455f.setContent(html_3b1c9541bbd04636a4f3bfe212ea7ab4);
+            
+
+            marker_c315997bd072404abf636f44243d6e47.bindPopup(popup_6e10d002f5b14ba2bfaa3d980f06455f)
+            ;
+
+            
+        
+    
+        var marker_71348e06348c4e0d8bdf9cada589e8eb = L.marker(
+            [30.2809532633697, -97.7440860877236],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f29b2bdf231c4cee8b3d1be6b8930160 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_37fc2b3e319f479a88094cac6e2847da = $('<div id="html_37fc2b3e319f479a88094cac6e2847da" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $132, <b>Rooms</b>:1, <b>Distance</b> : 1.09 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17160578?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_f29b2bdf231c4cee8b3d1be6b8930160.setContent(html_37fc2b3e319f479a88094cac6e2847da);
+            
+
+            marker_71348e06348c4e0d8bdf9cada589e8eb.bindPopup(popup_f29b2bdf231c4cee8b3d1be6b8930160)
+            ;
+
+            
+        
+    
+        var marker_49ab9c5c9c3e4766a856b4033426a544 = L.marker(
+            [30.271949094734303, -97.7495025373007],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9d57c4e9589b476ea328d88b3cf33ed5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_12734cb7abad4688b782d76290f37e02 = $('<div id="html_12734cb7abad4688b782d76290f37e02" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $79, <b>Rooms</b>:1, <b>Distance</b> : 0.57 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17547362?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_9d57c4e9589b476ea328d88b3cf33ed5.setContent(html_12734cb7abad4688b782d76290f37e02);
+            
+
+            marker_49ab9c5c9c3e4766a856b4033426a544.bindPopup(popup_9d57c4e9589b476ea328d88b3cf33ed5)
+            ;
+
+            
+        
+    
+        var marker_0679369265f14c1bb722e858aa2a6253 = L.marker(
+            [30.286911184504, -97.7514097516172],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_cf91639e7e904724bbc8ca0b75c716dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cf26526343744919a7f28878c64fffe9 = $('<div id="html_cf26526343744919a7f28878c64fffe9" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $38, <b>Rooms</b>:2, <b>Distance</b> : 1.9 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/13265661?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_cf91639e7e904724bbc8ca0b75c716dd.setContent(html_cf26526343744919a7f28878c64fffe9);
+            
+
+            marker_0679369265f14c1bb722e858aa2a6253.bindPopup(popup_cf91639e7e904724bbc8ca0b75c716dd)
+            ;
+
+            
+        
+    
+        var marker_4211074790d84253961b406cc7cfe9de = L.marker(
+            [30.2780235401368, -97.7590784333842],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_33ee0e02c956443c8360c948afccc517 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67448740ccdf4f81ba549cc85dd2eea9 = $('<div id="html_67448740ccdf4f81ba549cc85dd2eea9" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $85, <b>Rooms</b>:1, <b>Distance</b> : 1.67 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5476443?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_33ee0e02c956443c8360c948afccc517.setContent(html_67448740ccdf4f81ba549cc85dd2eea9);
+            
+
+            marker_4211074790d84253961b406cc7cfe9de.bindPopup(popup_33ee0e02c956443c8360c948afccc517)
+            ;
+
+            
+        
+    
+        var marker_a80d135a4acd491aa37645ae5ae16124 = L.marker(
+            [30.2845730790654, -97.7428234820149],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e1ce14aec02f463db7a93fe3305e2bb1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_29ab5a7d69c342ae8032de15f5b7ebd0 = $('<div id="html_29ab5a7d69c342ae8032de15f5b7ebd0" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $70, <b>Rooms</b>:1, <b>Distance</b> : 1.49 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19102228?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_e1ce14aec02f463db7a93fe3305e2bb1.setContent(html_29ab5a7d69c342ae8032de15f5b7ebd0);
+            
+
+            marker_a80d135a4acd491aa37645ae5ae16124.bindPopup(popup_e1ce14aec02f463db7a93fe3305e2bb1)
+            ;
+
+            
+        
+    
+        var marker_8ce47afbe37448b8a68abab72babe618 = L.marker(
+            [30.2687560121593, -97.7505782307208],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_db9383b2159c4e4b986a4dd0440a5271 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c19b34cda604668be74a192fcb450bc = $('<div id="html_0c19b34cda604668be74a192fcb450bc" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $799, <b>Rooms</b>:3, <b>Distance</b> : 0.71 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19163669?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_db9383b2159c4e4b986a4dd0440a5271.setContent(html_0c19b34cda604668be74a192fcb450bc);
+            
+
+            marker_8ce47afbe37448b8a68abab72babe618.bindPopup(popup_db9383b2159c4e4b986a4dd0440a5271)
+            ;
+
+            
+        
+    
+        var marker_187989826d8441e0b1e2b22bde98a1af = L.marker(
+            [30.2814987676357, -97.75488392531608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_67ed3209241446c3940d00aae66aaebe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67217752aa0a421c9fbf04c1c4b63435 = $('<div id="html_67217752aa0a421c9fbf04c1c4b63435" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 1.57 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18946554?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_67ed3209241446c3940d00aae66aaebe.setContent(html_67217752aa0a421c9fbf04c1c4b63435);
+            
+
+            marker_187989826d8441e0b1e2b22bde98a1af.bindPopup(popup_67ed3209241446c3940d00aae66aaebe)
+            ;
+
+            
+        
+    
+        var marker_d804c28c9baf44f3becd0b03cc274493 = L.marker(
+            [30.272516963741303, -97.75426201393991],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ed12197cc6ae4f3899e330f9b2a746a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b452b35e2aa444da0c2ee074cc015a3 = $('<div id="html_6b452b35e2aa444da0c2ee074cc015a3" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $89, <b>Rooms</b>:1, <b>Distance</b> : 1.03 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5852265?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_ed12197cc6ae4f3899e330f9b2a746a9.setContent(html_6b452b35e2aa444da0c2ee074cc015a3);
+            
+
+            marker_d804c28c9baf44f3becd0b03cc274493.bindPopup(popup_ed12197cc6ae4f3899e330f9b2a746a9)
+            ;
+
+            
+        
+    
+        var marker_20b6cbb4bd18447ebd790b65fd92b0c6 = L.marker(
+            [30.2730044157726, -97.7550491177688],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e850dca4ad6f47ce85b1fa12009cc530 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_746fe53c708a45b095f45e3d819d5692 = $('<div id="html_746fe53c708a45b095f45e3d819d5692" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $85, <b>Rooms</b>:1, <b>Distance</b> : 1.11 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/10328386?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_e850dca4ad6f47ce85b1fa12009cc530.setContent(html_746fe53c708a45b095f45e3d819d5692);
+            
+
+            marker_20b6cbb4bd18447ebd790b65fd92b0c6.bindPopup(popup_e850dca4ad6f47ce85b1fa12009cc530)
+            ;
+
+            
+        
+    
+        var marker_6156f2b0868140f88198927d050cc722 = L.marker(
+            [30.2833113002934, -97.7588669459401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_5fa835036e1f4ba295a430ac160abea1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_627f478efbe44201adeb6de8f17be640 = $('<div id="html_627f478efbe44201adeb6de8f17be640" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:2, <b>Distance</b> : 1.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15485472?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_5fa835036e1f4ba295a430ac160abea1.setContent(html_627f478efbe44201adeb6de8f17be640);
+            
+
+            marker_6156f2b0868140f88198927d050cc722.bindPopup(popup_5fa835036e1f4ba295a430ac160abea1)
+            ;
+
+            
+        
+    
+        var marker_898668a97ac14e1693c5b71e94fbd85b = L.marker(
+            [30.2861468170891, -97.74505401766321],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_85791456f7ca4fcd8dea831703cd0199 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8ec4f36cbcfc49b497d8045f1954733b = $('<div id="html_8ec4f36cbcfc49b497d8045f1954733b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $66, <b>Rooms</b>:1, <b>Distance</b> : 1.67 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18876463?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_85791456f7ca4fcd8dea831703cd0199.setContent(html_8ec4f36cbcfc49b497d8045f1954733b);
+            
+
+            marker_898668a97ac14e1693c5b71e94fbd85b.bindPopup(popup_85791456f7ca4fcd8dea831703cd0199)
+            ;
+
+            
+        
+    
+        var marker_ed033322cd764c14a0d3371fb2bb1687 = L.marker(
+            [30.2876399146006, -97.74840561479701],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_d6e3c9cd8ecf471089061bfe55e79447 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6cd488b3e4d044e98b3b4a62217c9064 = $('<div id="html_6cd488b3e4d044e98b3b4a62217c9064" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $33, <b>Rooms</b>:Studio, <b>Distance</b> : 1.89 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18912622?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_d6e3c9cd8ecf471089061bfe55e79447.setContent(html_6cd488b3e4d044e98b3b4a62217c9064);
+            
+
+            marker_ed033322cd764c14a0d3371fb2bb1687.bindPopup(popup_d6e3c9cd8ecf471089061bfe55e79447)
+            ;
+
+            
+        
+    
+        var marker_c72d73de51d44bcba7e48ddc6722eed4 = L.marker(
+            [30.2799952809934, -97.74403323313949],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_979a8e52805b49afabbfbc43c84c5b5e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_38491ccec0fc43f2a9abbdc19a50c258 = $('<div id="html_38491ccec0fc43f2a9abbdc19a50c258" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $130, <b>Rooms</b>:1, <b>Distance</b> : 0.98 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1080704?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_979a8e52805b49afabbfbc43c84c5b5e.setContent(html_38491ccec0fc43f2a9abbdc19a50c258);
+            
+
+            marker_c72d73de51d44bcba7e48ddc6722eed4.bindPopup(popup_979a8e52805b49afabbfbc43c84c5b5e)
+            ;
+
+            
+        
+    
+        var marker_2981ec5bc13c4e4aac5fab17ae8dbc1e = L.marker(
+            [30.266087554781798, -97.74175163314501],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_2f416b0729a94f619e69d62c33f6a274 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5510116ee074412b05aa3c94a02bab4 = $('<div id="html_e5510116ee074412b05aa3c94a02bab4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $200, <b>Rooms</b>:1, <b>Distance</b> : 0.59 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/943528?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_2f416b0729a94f619e69d62c33f6a274.setContent(html_e5510116ee074412b05aa3c94a02bab4);
+            
+
+            marker_2981ec5bc13c4e4aac5fab17ae8dbc1e.bindPopup(popup_2f416b0729a94f619e69d62c33f6a274)
+            ;
+
+            
+        
+    
+        var marker_0660c7064fd84fd7b981b81da9b600ca = L.marker(
+            [30.2814338808662, -97.7514226729711],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_0e7114cfa35d4b838c8c96107a00efd5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_493eedbd37c94186bce04021273760d4 = $('<div id="html_493eedbd37c94186bce04021273760d4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $73, <b>Rooms</b>:1, <b>Distance</b> : 1.36 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15657024?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_0e7114cfa35d4b838c8c96107a00efd5.setContent(html_493eedbd37c94186bce04021273760d4);
+            
+
+            marker_0660c7064fd84fd7b981b81da9b600ca.bindPopup(popup_0e7114cfa35d4b838c8c96107a00efd5)
+            ;
+
+            
+        
+    
+        var marker_2909af7b6b77430db0e4eea85f5bba9d = L.marker(
+            [30.286157018329302, -97.74752847663271],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ada7a7c434a84212a649ea221ded3333 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_00bbafff7f664ca2b549f2218944822a = $('<div id="html_00bbafff7f664ca2b549f2218944822a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $81, <b>Rooms</b>:1, <b>Distance</b> : 1.71 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18757308?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_ada7a7c434a84212a649ea221ded3333.setContent(html_00bbafff7f664ca2b549f2218944822a);
+            
+
+            marker_2909af7b6b77430db0e4eea85f5bba9d.bindPopup(popup_ada7a7c434a84212a649ea221ded3333)
+            ;
+
+            
+        
+    
+        var marker_06ad503f834d4d37aa090c8be207d79f = L.marker(
+            [30.2866725033843, -97.7475468725679],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_f627ae6fa4354675bf69aac197f8d90d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_604b7ae5af01460fa69032bfc59b0867 = $('<div id="html_604b7ae5af01460fa69032bfc59b0867" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $79, <b>Rooms</b>:1, <b>Distance</b> : 1.76 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19473001?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_f627ae6fa4354675bf69aac197f8d90d.setContent(html_604b7ae5af01460fa69032bfc59b0867);
+            
+
+            marker_06ad503f834d4d37aa090c8be207d79f.bindPopup(popup_f627ae6fa4354675bf69aac197f8d90d)
+            ;
+
+            
+        
+    
+        var marker_e243fd08adac46bf80c4d43bc6b7d281 = L.marker(
+            [30.260198533344997, -97.7326855958658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_5f345189e1a64402ae6a04a70e5915f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1fb2ea98d4e846e48faa88ac2e79abe5 = $('<div id="html_1fb2ea98d4e846e48faa88ac2e79abe5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $113, <b>Rooms</b>:Studio, <b>Distance</b> : 1.61 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1499714?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_5f345189e1a64402ae6a04a70e5915f2.setContent(html_1fb2ea98d4e846e48faa88ac2e79abe5);
+            
+
+            marker_e243fd08adac46bf80c4d43bc6b7d281.bindPopup(popup_5f345189e1a64402ae6a04a70e5915f2)
+            ;
+
+            
+        
+    
+        var marker_7983b61e73ad49509c0cf4c57787f463 = L.marker(
+            [30.2851531130717, -97.75028554673821],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ffa8df2b01b04ccbb804d5442fe0de94 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3d3107617ad24a47ae8f2778d7665106 = $('<div id="html_3d3107617ad24a47ae8f2778d7665106" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $70, <b>Rooms</b>:1, <b>Distance</b> : 1.68 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17421763?location=Cedar%20Park%2C%20TX ">here</a></div>')[0];
+                popup_ffa8df2b01b04ccbb804d5442fe0de94.setContent(html_3d3107617ad24a47ae8f2778d7665106);
+            
+
+            marker_7983b61e73ad49509c0cf4c57787f463.bindPopup(popup_ffa8df2b01b04ccbb804d5442fe0de94)
+            ;
+
+            
+        
+    
+        var marker_0a7b7b85d245403eab6b6b137e056240 = L.marker(
+            [30.272516963741303, -97.75426201393991],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_342decb82d9f4c40a0dacff9389be6ba = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b846e82a8804e1583e472ca0bfc9ca0 = $('<div id="html_3b846e82a8804e1583e472ca0bfc9ca0" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $89, <b>Rooms</b>:1, <b>Distance</b> : 1.03 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5852265?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_342decb82d9f4c40a0dacff9389be6ba.setContent(html_3b846e82a8804e1583e472ca0bfc9ca0);
+            
+
+            marker_0a7b7b85d245403eab6b6b137e056240.bindPopup(popup_342decb82d9f4c40a0dacff9389be6ba)
+            ;
+
+            
+        
+    
+        var marker_68ad473c3600443885fd10fe2e347004 = L.marker(
+            [30.280043927786398, -97.74563049222022],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a7a80f2756da4a94a36a507fe3e93c05 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e0851f93e9db493f9a8094a4624d7628 = $('<div id="html_e0851f93e9db493f9a8094a4624d7628" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $144, <b>Rooms</b>:1, <b>Distance</b> : 1.01 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/522136?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_a7a80f2756da4a94a36a507fe3e93c05.setContent(html_e0851f93e9db493f9a8094a4624d7628);
+            
+
+            marker_68ad473c3600443885fd10fe2e347004.bindPopup(popup_a7a80f2756da4a94a36a507fe3e93c05)
+            ;
+
+            
+        
+    
+        var marker_b0b1e719d5fa4c03ab8c06c9a370f451 = L.marker(
+            [30.266591178295396, -97.7329755650586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_137a944e1c124ee9948d81f8ec9f8706 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed4f206b1b3646b98d66aa81e11a66f3 = $('<div id="html_ed4f206b1b3646b98d66aa81e11a66f3" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $219, <b>Rooms</b>:2, <b>Distance</b> : 1.15 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/347736?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_137a944e1c124ee9948d81f8ec9f8706.setContent(html_ed4f206b1b3646b98d66aa81e11a66f3);
+            
+
+            marker_b0b1e719d5fa4c03ab8c06c9a370f451.bindPopup(popup_137a944e1c124ee9948d81f8ec9f8706)
+            ;
+
+            
+        
+    
+        var marker_3a33e543caaa416abdb8e6b45fed6fb6 = L.marker(
+            [30.267782316989898, -97.7456278570408],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ab47ae5e393e4828a4d6a3ffe0ec6173 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e71f2999eb31475c8d60a2de7355e64b = $('<div id="html_e71f2999eb31475c8d60a2de7355e64b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:2, <b>Distance</b> : 0.41 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/323733?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_ab47ae5e393e4828a4d6a3ffe0ec6173.setContent(html_e71f2999eb31475c8d60a2de7355e64b);
+            
+
+            marker_3a33e543caaa416abdb8e6b45fed6fb6.bindPopup(popup_ab47ae5e393e4828a4d6a3ffe0ec6173)
+            ;
+
+            
+        
+    
+        var marker_423c35aa6ac34be38a8070a806201b81 = L.marker(
+            [30.2572079814882, -97.75563315849729],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b56ca5bf283c4cdaa0f379e9dd70a33f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_43a8b29104cb48ee809a827b279da847 = $('<div id="html_43a8b29104cb48ee809a827b279da847" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $145, <b>Rooms</b>:1, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/300574?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_b56ca5bf283c4cdaa0f379e9dd70a33f.setContent(html_43a8b29104cb48ee809a827b279da847);
+            
+
+            marker_423c35aa6ac34be38a8070a806201b81.bindPopup(popup_b56ca5bf283c4cdaa0f379e9dd70a33f)
+            ;
+
+            
+        
+    
+        var marker_af6dcaa7ad97437db1d8a7b676b1e0d4 = L.marker(
+            [30.263598379166, -97.7420374650896],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9fb4709979634b1a9619e507bb1d278f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2e01fc180eaa412d9282cc82d7c612a9 = $('<div id="html_2e01fc180eaa412d9282cc82d7c612a9" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $149, <b>Rooms</b>:1, <b>Distance</b> : 0.85 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/383689?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_9fb4709979634b1a9619e507bb1d278f.setContent(html_2e01fc180eaa412d9282cc82d7c612a9);
+            
+
+            marker_af6dcaa7ad97437db1d8a7b676b1e0d4.bindPopup(popup_9fb4709979634b1a9619e507bb1d278f)
+            ;
+
+            
+        
+    
+        var marker_4cc02fe02a234088b1e3ef231ea7ec4b = L.marker(
+            [30.266665187932897, -97.7339466339838],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6b7e67c92db44a2fa86131d80689d1ea = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1e43f6fc18994cd38255949ae11d86be = $('<div id="html_1e43f6fc18994cd38255949ae11d86be" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $168, <b>Rooms</b>:1, <b>Distance</b> : 1.06 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2967570?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_6b7e67c92db44a2fa86131d80689d1ea.setContent(html_1e43f6fc18994cd38255949ae11d86be);
+            
+
+            marker_4cc02fe02a234088b1e3ef231ea7ec4b.bindPopup(popup_6b7e67c92db44a2fa86131d80689d1ea)
+            ;
+
+            
+        
+    
+        var marker_cfdfefdbd98c4a97be5d04a911fa521f = L.marker(
+            [30.2799952809934, -97.74403323313949],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ee718e4ffe234cd08971ce2b1b8d2d22 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_034153ba676647e29d0539be2586330e = $('<div id="html_034153ba676647e29d0539be2586330e" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $130, <b>Rooms</b>:1, <b>Distance</b> : 0.98 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1080704?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_ee718e4ffe234cd08971ce2b1b8d2d22.setContent(html_034153ba676647e29d0539be2586330e);
+            
+
+            marker_cfdfefdbd98c4a97be5d04a911fa521f.bindPopup(popup_ee718e4ffe234cd08971ce2b1b8d2d22)
+            ;
+
+            
+        
+    
+        var marker_13ba19f98a7d49c3ad7a07ac426ca004 = L.marker(
+            [30.2659916269128, -97.73534517544658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_06b32f1f9e4b4349b386d1c153dac174 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_421375a91d4d45178341024a6a02e584 = $('<div id="html_421375a91d4d45178341024a6a02e584" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $349, <b>Rooms</b>:2, <b>Distance</b> : 0.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15886011?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_06b32f1f9e4b4349b386d1c153dac174.setContent(html_421375a91d4d45178341024a6a02e584);
+            
+
+            marker_13ba19f98a7d49c3ad7a07ac426ca004.bindPopup(popup_06b32f1f9e4b4349b386d1c153dac174)
+            ;
+
+            
+        
+    
+        var marker_183cb68e35034a88bcfe1e1b9a403b7f = L.marker(
+            [30.261115947777, -97.7344828448813],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_d7c1fe6030a6406d97a7e04b364de0c6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8804ce2846a0469b925e3ac96e5db407 = $('<div id="html_8804ce2846a0469b925e3ac96e5db407" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 1.42 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5456?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_d7c1fe6030a6406d97a7e04b364de0c6.setContent(html_8804ce2846a0469b925e3ac96e5db407);
+            
+
+            marker_183cb68e35034a88bcfe1e1b9a403b7f.bindPopup(popup_d7c1fe6030a6406d97a7e04b364de0c6)
+            ;
+
+            
+        
+    
+        var marker_04956c2199724cb89c725125af2611cb = L.marker(
+            [30.2648048221581, -97.73428325945801],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9db8bfc86bf94880befa645fe2b5dd79 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6489e5b60aad4eff81c163f0df8daea7 = $('<div id="html_6489e5b60aad4eff81c163f0df8daea7" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $1400, <b>Rooms</b>:3, <b>Distance</b> : 1.15 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/319759?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_9db8bfc86bf94880befa645fe2b5dd79.setContent(html_6489e5b60aad4eff81c163f0df8daea7);
+            
+
+            marker_04956c2199724cb89c725125af2611cb.bindPopup(popup_9db8bfc86bf94880befa645fe2b5dd79)
+            ;
+
+            
+        
+    
+        var marker_c515f1515eee4386967a8795c9838b2d = L.marker(
+            [30.2721341360948, -97.7256809889267],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6554f01f1c604320bda07ce013b6664f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e469e3f8e1084633a5b606d45e9e199f = $('<div id="html_e469e3f8e1084633a5b606d45e9e199f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 1.74 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/576243?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_6554f01f1c604320bda07ce013b6664f.setContent(html_e469e3f8e1084633a5b606d45e9e199f);
+            
+
+            marker_c515f1515eee4386967a8795c9838b2d.bindPopup(popup_6554f01f1c604320bda07ce013b6664f)
+            ;
+
+            
+        
+    
+        var marker_cf87471c14e84980b6fb889ed89364e8 = L.marker(
+            [30.2833113002934, -97.7588669459401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6005793739be4239bd1a7ebe91b5db0f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_480c8df743ce48d9a3b5f3bde6f3a22f = $('<div id="html_480c8df743ce48d9a3b5f3bde6f3a22f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:2, <b>Distance</b> : 1.99 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15485472?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_6005793739be4239bd1a7ebe91b5db0f.setContent(html_480c8df743ce48d9a3b5f3bde6f3a22f);
+            
+
+            marker_cf87471c14e84980b6fb889ed89364e8.bindPopup(popup_6005793739be4239bd1a7ebe91b5db0f)
+            ;
+
+            
+        
+    
+        var marker_72be2d5e16f540cda60d42c93b83a3f9 = L.marker(
+            [30.275484886441802, -97.726282028393],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_81afc76082ea43c6ab1bf0f08f761986 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d9cd9ac166f438faf12a5b7fbafd31a = $('<div id="html_1d9cd9ac166f438faf12a5b7fbafd31a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $133, <b>Rooms</b>:1, <b>Distance</b> : 1.74 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2266768?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_81afc76082ea43c6ab1bf0f08f761986.setContent(html_1d9cd9ac166f438faf12a5b7fbafd31a);
+            
+
+            marker_72be2d5e16f540cda60d42c93b83a3f9.bindPopup(popup_81afc76082ea43c6ab1bf0f08f761986)
+            ;
+
+            
+        
+    
+        var marker_ee336f1cc2af418f875889d64b5b1e7c = L.marker(
+            [30.2808644754762, -97.7452914058877],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_aa930f9b053a42f0bbdf7dcdf59a36ba = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d3650639b9364419badd4d7a7e16e3d6 = $('<div id="html_d3650639b9364419badd4d7a7e16e3d6" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $130, <b>Rooms</b>:Studio, <b>Distance</b> : 1.09 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/951272?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_aa930f9b053a42f0bbdf7dcdf59a36ba.setContent(html_d3650639b9364419badd4d7a7e16e3d6);
+            
+
+            marker_ee336f1cc2af418f875889d64b5b1e7c.bindPopup(popup_aa930f9b053a42f0bbdf7dcdf59a36ba)
+            ;
+
+            
+        
+    
+        var marker_44d3f5446aab4ea0ada1d224a10b3e94 = L.marker(
+            [30.2723490892175, -97.72514019490428],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_cfd7c5dcb70747a2810c172ca9e15348 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_29430063b7ca4361937eafcd5549375f = $('<div id="html_29430063b7ca4361937eafcd5549375f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $95, <b>Rooms</b>:1, <b>Distance</b> : 1.79 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/329306?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_cfd7c5dcb70747a2810c172ca9e15348.setContent(html_29430063b7ca4361937eafcd5549375f);
+            
+
+            marker_44d3f5446aab4ea0ada1d224a10b3e94.bindPopup(popup_cfd7c5dcb70747a2810c172ca9e15348)
+            ;
+
+            
+        
+    
+        var marker_9f6672fd64ce43d0882595e1d6e8af35 = L.marker(
+            [30.266022980983, -97.74292591098958],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_cc38b7f179b84b429727492051931ffd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2194aa29993142c198192df2e0c2c447 = $('<div id="html_2194aa29993142c198192df2e0c2c447" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $125, <b>Rooms</b>:1, <b>Distance</b> : 0.57 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4111528?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_cc38b7f179b84b429727492051931ffd.setContent(html_2194aa29993142c198192df2e0c2c447);
+            
+
+            marker_9f6672fd64ce43d0882595e1d6e8af35.bindPopup(popup_cc38b7f179b84b429727492051931ffd)
+            ;
+
+            
+        
+    
+        var marker_ac13f0c5ad4148acb320d27ff9ba254a = L.marker(
+            [30.276368388787898, -97.75969614882221],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_00b0bca584ec40988936ecd10b199fea = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_49a37355c90b4d328e2c0b790a652f52 = $('<div id="html_49a37355c90b4d328e2c0b790a652f52" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $136, <b>Rooms</b>:Studio, <b>Distance</b> : 1.65 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2010358?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_00b0bca584ec40988936ecd10b199fea.setContent(html_49a37355c90b4d328e2c0b790a652f52);
+            
+
+            marker_ac13f0c5ad4148acb320d27ff9ba254a.bindPopup(popup_00b0bca584ec40988936ecd10b199fea)
+            ;
+
+            
+        
+    
+        var marker_b5fab5cfb2124d709f464d26c306e19c = L.marker(
+            [30.2785773995891, -97.74782012912159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_aff37c8114344f7393a52a63ec9620ab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2f67097fd33148c495e2092c7eed55fd = $('<div id="html_2f67097fd33148c495e2092c7eed55fd" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $150, <b>Rooms</b>:1, <b>Distance</b> : 0.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4171708?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_aff37c8114344f7393a52a63ec9620ab.setContent(html_2f67097fd33148c495e2092c7eed55fd);
+            
+
+            marker_b5fab5cfb2124d709f464d26c306e19c.bindPopup(popup_aff37c8114344f7393a52a63ec9620ab)
+            ;
+
+            
+        
+    
+        var marker_30c0e6e026a848cd981a1cfd6118481d = L.marker(
+            [30.2706985063983, -97.72865329186209],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6962a20e8c184ad199394d4c5ad6f8ac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2023981f1dc14607bd54189409ce11c2 = $('<div id="html_2023981f1dc14607bd54189409ce11c2" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $1000, <b>Rooms</b>:5, <b>Distance</b> : 1.45 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/733203?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_6962a20e8c184ad199394d4c5ad6f8ac.setContent(html_2023981f1dc14607bd54189409ce11c2);
+            
+
+            marker_30c0e6e026a848cd981a1cfd6118481d.bindPopup(popup_6962a20e8c184ad199394d4c5ad6f8ac)
+            ;
+
+            
+        
+    
+        var marker_5fe6deed59274a1081f0f9097f039081 = L.marker(
+            [30.265865937180802, -97.7399196797612],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_7474433be8d445939e37a13b9019bb0f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1fa01d9766524b358bcb4f9090eb90a5 = $('<div id="html_1fa01d9766524b358bcb4f9090eb90a5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $300, <b>Rooms</b>:3, <b>Distance</b> : 0.69 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/690984?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_7474433be8d445939e37a13b9019bb0f.setContent(html_1fa01d9766524b358bcb4f9090eb90a5);
+            
+
+            marker_5fe6deed59274a1081f0f9097f039081.bindPopup(popup_7474433be8d445939e37a13b9019bb0f)
+            ;
+
+            
+        
+    
+        var marker_3004e578c05349b0a9eb6caf234cd309 = L.marker(
+            [30.2727531311685, -97.72729139645409],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b496d595999547b5b39291a98fd28e20 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7e49d1da3d324477b05e44a1b3b65287 = $('<div id="html_7e49d1da3d324477b05e44a1b3b65287" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $405, <b>Rooms</b>:3, <b>Distance</b> : 1.59 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/3760974?location=Brazos%20River%2C%20TX ">here</a></div>')[0];
+                popup_b496d595999547b5b39291a98fd28e20.setContent(html_7e49d1da3d324477b05e44a1b3b65287);
+            
+
+            marker_3004e578c05349b0a9eb6caf234cd309.bindPopup(popup_b496d595999547b5b39291a98fd28e20)
+            ;
+
+            
+        
+    
+        var marker_4e0d5d33236e4697808e500af86d1891 = L.marker(
+            [30.261164849176396, -97.73343340675069],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_d9b106da0398465f830a1a676551da8c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ac9bb98cf828446b8782c21c0cb65fee = $('<div id="html_ac9bb98cf828446b8782c21c0cb65fee" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $122, <b>Rooms</b>:1, <b>Distance</b> : 1.48 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/9301886?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_d9b106da0398465f830a1a676551da8c.setContent(html_ac9bb98cf828446b8782c21c0cb65fee);
+            
+
+            marker_4e0d5d33236e4697808e500af86d1891.bindPopup(popup_d9b106da0398465f830a1a676551da8c)
+            ;
+
+            
+        
+    
+        var marker_476705b046894569bcf6b7205563c2a9 = L.marker(
+            [30.265328966111603, -97.76251971115428],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_5230c155f3d845b3b55d625a72441cc5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9d637b4bccaa4279b74ba05030bfa16a = $('<div id="html_9d637b4bccaa4279b74ba05030bfa16a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $49, <b>Rooms</b>:1, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/8654439?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_5230c155f3d845b3b55d625a72441cc5.setContent(html_9d637b4bccaa4279b74ba05030bfa16a);
+            
+
+            marker_476705b046894569bcf6b7205563c2a9.bindPopup(popup_5230c155f3d845b3b55d625a72441cc5)
+            ;
+
+            
+        
+    
+        var marker_1d300cd4e1274c3eb5476a466ca8f0e0 = L.marker(
+            [30.2589935046174, -97.7315932481048],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_26e59ec2423f4a9081236793918c680a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e71357b0e01948f8a5b47bfe5299d525 = $('<div id="html_e71357b0e01948f8a5b47bfe5299d525" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $90, <b>Rooms</b>:1, <b>Distance</b> : 1.78 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5280717?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_26e59ec2423f4a9081236793918c680a.setContent(html_e71357b0e01948f8a5b47bfe5299d525);
+            
+
+            marker_1d300cd4e1274c3eb5476a466ca8f0e0.bindPopup(popup_26e59ec2423f4a9081236793918c680a)
+            ;
+
+            
+        
+    
+        var marker_6a78bab94e074431a71d28d21f195db5 = L.marker(
+            [30.2607005204298, -97.73746499274901],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_52b1db9e86554b0f930b9fe8378484d5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8a69b5888612448b9691960997cc6cf4 = $('<div id="html_8a69b5888612448b9691960997cc6cf4" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $215, <b>Rooms</b>:1, <b>Distance</b> : 1.3 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15058997?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_52b1db9e86554b0f930b9fe8378484d5.setContent(html_8a69b5888612448b9691960997cc6cf4);
+            
+
+            marker_6a78bab94e074431a71d28d21f195db5.bindPopup(popup_52b1db9e86554b0f930b9fe8378484d5)
+            ;
+
+            
+        
+    
+        var marker_15dcfce493a04d598c124dded92a7011 = L.marker(
+            [30.2781280196745, -97.744234724621],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_13848eaa6e3442e2a3b1d2288cbb6be3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4861791018364bc693e6deacbba96365 = $('<div id="html_4861791018364bc693e6deacbba96365" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $119, <b>Rooms</b>:1, <b>Distance</b> : 0.78 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/11461480?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_13848eaa6e3442e2a3b1d2288cbb6be3.setContent(html_4861791018364bc693e6deacbba96365);
+            
+
+            marker_15dcfce493a04d598c124dded92a7011.bindPopup(popup_13848eaa6e3442e2a3b1d2288cbb6be3)
+            ;
+
+            
+        
+    
+        var marker_5eb8dfba8ada40508e213c390f38e867 = L.marker(
+            [30.275064201686398, -97.7462086094986],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_bfee146d929d44fe80caff7b81c23492 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f8085a01bb0c423fa52f6fc1ada78a64 = $('<div id="html_f8085a01bb0c423fa52f6fc1ada78a64" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $115, <b>Rooms</b>:1, <b>Distance</b> : 0.5 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4013329?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_bfee146d929d44fe80caff7b81c23492.setContent(html_f8085a01bb0c423fa52f6fc1ada78a64);
+            
+
+            marker_5eb8dfba8ada40508e213c390f38e867.bindPopup(popup_bfee146d929d44fe80caff7b81c23492)
+            ;
+
+            
+        
+    
+        var marker_67e07b71cada4c39b26fe4462e40fdd1 = L.marker(
+            [30.258930762922503, -97.7315289940116],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_d072f84ded9a4611bc046887e09db659 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c99a8f731629487bab596ad99eac3514 = $('<div id="html_c99a8f731629487bab596ad99eac3514" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $80, <b>Rooms</b>:2, <b>Distance</b> : 1.79 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17683148?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_d072f84ded9a4611bc046887e09db659.setContent(html_c99a8f731629487bab596ad99eac3514);
+            
+
+            marker_67e07b71cada4c39b26fe4462e40fdd1.bindPopup(popup_d072f84ded9a4611bc046887e09db659)
+            ;
+
+            
+        
+    
+        var marker_2826a51215884ee9b7a4b2df0cec5955 = L.marker(
+            [30.2589270979944, -97.7302193953166],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_2ab32ffa781944438c80427f439e1500 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a72d7cbba8514554941ef5c68013996a = $('<div id="html_a72d7cbba8514554941ef5c68013996a" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $49, <b>Rooms</b>:1, <b>Distance</b> : 1.87 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17344531?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_2ab32ffa781944438c80427f439e1500.setContent(html_a72d7cbba8514554941ef5c68013996a);
+            
+
+            marker_2826a51215884ee9b7a4b2df0cec5955.bindPopup(popup_2ab32ffa781944438c80427f439e1500)
+            ;
+
+            
+        
+    
+        var marker_b3ee8fdc19d640c19556b91e6ce89974 = L.marker(
+            [30.2563293185139, -97.74645530615558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_278cf74d39404554babf2307e4d56012 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d1741db2e4414a01bc2c5947c9b245e9 = $('<div id="html_d1741db2e4414a01bc2c5947c9b245e9" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $102, <b>Rooms</b>:1, <b>Distance</b> : 1.66 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4186158?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_278cf74d39404554babf2307e4d56012.setContent(html_d1741db2e4414a01bc2c5947c9b245e9);
+            
+
+            marker_b3ee8fdc19d640c19556b91e6ce89974.bindPopup(popup_278cf74d39404554babf2307e4d56012)
+            ;
+
+            
+        
+    
+        var marker_6c2c3a166ff1403dbf8ebdf29e1ec378 = L.marker(
+            [30.262374088273898, -97.7315499598229],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9c243d1c20d04debb6679aec30b40dfe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_37c73be7b2864ab98edc6678ec6be7d5 = $('<div id="html_37c73be7b2864ab98edc6678ec6be7d5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:Studio, <b>Distance</b> : 1.52 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/12021271?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_9c243d1c20d04debb6679aec30b40dfe.setContent(html_37c73be7b2864ab98edc6678ec6be7d5);
+            
+
+            marker_6c2c3a166ff1403dbf8ebdf29e1ec378.bindPopup(popup_9c243d1c20d04debb6679aec30b40dfe)
+            ;
+
+            
+        
+    
+        var marker_6f4ab374cfbd4937a3c12094c3833e26 = L.marker(
+            [30.278296323148798, -97.7529642062388],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ec81540591fa440ca646d9747a5dd000 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8c1547ff17154cff993b897e4925b193 = $('<div id="html_8c1547ff17154cff993b897e4925b193" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $118, <b>Rooms</b>:Studio, <b>Distance</b> : 1.19 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/6570493?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_ec81540591fa440ca646d9747a5dd000.setContent(html_8c1547ff17154cff993b897e4925b193);
+            
+
+            marker_6f4ab374cfbd4937a3c12094c3833e26.bindPopup(popup_ec81540591fa440ca646d9747a5dd000)
+            ;
+
+            
+        
+    
+        var marker_9ac10744f16c4dde8b3676427f25f0f2 = L.marker(
+            [30.2594776429935, -97.7373178206053],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_201e80f1f88b43a8bb98e687a5f52de9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4441688c7bf1433db2ac37b054f6e972 = $('<div id="html_4441688c7bf1433db2ac37b054f6e972" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $175, <b>Rooms</b>:1, <b>Distance</b> : 1.43 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16707765?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_201e80f1f88b43a8bb98e687a5f52de9.setContent(html_4441688c7bf1433db2ac37b054f6e972);
+            
+
+            marker_9ac10744f16c4dde8b3676427f25f0f2.bindPopup(popup_201e80f1f88b43a8bb98e687a5f52de9)
+            ;
+
+            
+        
+    
+        var marker_768b99c6d7974a409c10790afdc64734 = L.marker(
+            [30.2862385211484, -97.7451145732044],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_284b244e7b0f4616bc769837fc9c72bf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b207dc97d954a57a3bb0886563504c7 = $('<div id="html_3b207dc97d954a57a3bb0886563504c7" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 1.68 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17254187?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_284b244e7b0f4616bc769837fc9c72bf.setContent(html_3b207dc97d954a57a3bb0886563504c7);
+            
+
+            marker_768b99c6d7974a409c10790afdc64734.bindPopup(popup_284b244e7b0f4616bc769837fc9c72bf)
+            ;
+
+            
+        
+    
+        var marker_c6d9dc35aee84c34881c3915ccc792ef = L.marker(
+            [30.2698351364429, -97.728741081514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_911e7c09c50145279316fcb318b316a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_18e40116572a4cfca46b1f977662669b = $('<div id="html_18e40116572a4cfca46b1f977662669b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $120, <b>Rooms</b>:1, <b>Distance</b> : 1.45 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/78731?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_911e7c09c50145279316fcb318b316a9.setContent(html_18e40116572a4cfca46b1f977662669b);
+            
+
+            marker_c6d9dc35aee84c34881c3915ccc792ef.bindPopup(popup_911e7c09c50145279316fcb318b316a9)
+            ;
+
+            
+        
+    
+        var marker_40beda81f772487a87467c8d6aa0d521 = L.marker(
+            [30.269075168021697, -97.73188489673001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9d03a47eab204fbbb70323e454f14b7e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd49b176f4884b58a7b8273d7a030c63 = $('<div id="html_fd49b176f4884b58a7b8273d7a030c63" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 1.16 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/10746657?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_9d03a47eab204fbbb70323e454f14b7e.setContent(html_fd49b176f4884b58a7b8273d7a030c63);
+            
+
+            marker_40beda81f772487a87467c8d6aa0d521.bindPopup(popup_9d03a47eab204fbbb70323e454f14b7e)
+            ;
+
+            
+        
+    
+        var marker_cd410f4d1bd04fa8aab77dc5de978002 = L.marker(
+            [30.273278021961602, -97.75706995428759],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_5ad753541bad4f2891785f36ca16b7f5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f4114a37e2514b89bbac15140ec8beb6 = $('<div id="html_f4114a37e2514b89bbac15140ec8beb6" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $116, <b>Rooms</b>:1, <b>Distance</b> : 1.31 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/11442375?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_5ad753541bad4f2891785f36ca16b7f5.setContent(html_f4114a37e2514b89bbac15140ec8beb6);
+            
+
+            marker_cd410f4d1bd04fa8aab77dc5de978002.bindPopup(popup_5ad753541bad4f2891785f36ca16b7f5)
+            ;
+
+            
+        
+    
+        var marker_9cb8f1a30746402a967eba4e316425df = L.marker(
+            [30.2792676133508, -97.7515836553973],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a663523059f447e196837c735c5a15ad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e9da046ee79446b1a46c054ee4d3dd16 = $('<div id="html_e9da046ee79446b1a46c054ee4d3dd16" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $102, <b>Rooms</b>:Studio, <b>Distance</b> : 1.18 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/7435259?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_a663523059f447e196837c735c5a15ad.setContent(html_e9da046ee79446b1a46c054ee4d3dd16);
+            
+
+            marker_9cb8f1a30746402a967eba4e316425df.bindPopup(popup_a663523059f447e196837c735c5a15ad)
+            ;
+
+            
+        
+    
+        var marker_1a7c50bc982d4257b1ce80505449c122 = L.marker(
+            [30.2562407772996, -97.7550967578314],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9bad1337c3324372a576da1fde2d3a99 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b84b838b8e4544ca8060967b19d595e5 = $('<div id="html_b84b838b8e4544ca8060967b19d595e5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $124, <b>Rooms</b>:2, <b>Distance</b> : 1.98 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/18306536?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_9bad1337c3324372a576da1fde2d3a99.setContent(html_b84b838b8e4544ca8060967b19d595e5);
+            
+
+            marker_1a7c50bc982d4257b1ce80505449c122.bindPopup(popup_9bad1337c3324372a576da1fde2d3a99)
+            ;
+
+            
+        
+    
+        var marker_5ca1364668f6412cb40f9fb67fdae351 = L.marker(
+            [30.288118473326897, -97.74898500680729],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_4d06aff47369403693609ae4cee83793 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2db98ae495144676b6945d4750a6beab = $('<div id="html_2db98ae495144676b6945d4750a6beab" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $40, <b>Rooms</b>:1, <b>Distance</b> : 1.95 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17136581?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_4d06aff47369403693609ae4cee83793.setContent(html_2db98ae495144676b6945d4750a6beab);
+            
+
+            marker_5ca1364668f6412cb40f9fb67fdae351.bindPopup(popup_4d06aff47369403693609ae4cee83793)
+            ;
+
+            
+        
+    
+        var marker_ebf8d403f35a46c6869bc4ba2ed67ee6 = L.marker(
+            [30.2585479769921, -97.7316720923303],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_42e6ea9064b24cfa98a3443b84535f94 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c546d353a2b54e85b81d50572c529446 = $('<div id="html_c546d353a2b54e85b81d50572c529446" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $80, <b>Rooms</b>:Studio, <b>Distance</b> : 1.81 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/15206817?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_42e6ea9064b24cfa98a3443b84535f94.setContent(html_c546d353a2b54e85b81d50572c529446);
+            
+
+            marker_ebf8d403f35a46c6869bc4ba2ed67ee6.bindPopup(popup_42e6ea9064b24cfa98a3443b84535f94)
+            ;
+
+            
+        
+    
+        var marker_f869fd1e454643af92b4e875b9c95fde = L.marker(
+            [30.273943952790898, -97.7304314753081],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_910398dcb8ec40b2bb453dabafd32d6a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f7f2d51597f244c08321e297e1fdebce = $('<div id="html_f7f2d51597f244c08321e297e1fdebce" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $364, <b>Rooms</b>:2, <b>Distance</b> : 1.31 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5396676?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_910398dcb8ec40b2bb453dabafd32d6a.setContent(html_f7f2d51597f244c08321e297e1fdebce);
+            
+
+            marker_f869fd1e454643af92b4e875b9c95fde.bindPopup(popup_910398dcb8ec40b2bb453dabafd32d6a)
+            ;
+
+            
+        
+    
+        var marker_7085e70f8af2412abb0efb969f298577 = L.marker(
+            [30.2750482460643, -97.7538372515672],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_c0c97e305fd64c99b2e241dfda56bdce = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e24990745b7648d7b6f02a1215ecc76b = $('<div id="html_e24990745b7648d7b6f02a1215ecc76b" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $109, <b>Rooms</b>:1, <b>Distance</b> : 1.07 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/12916775?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_c0c97e305fd64c99b2e241dfda56bdce.setContent(html_e24990745b7648d7b6f02a1215ecc76b);
+            
+
+            marker_7085e70f8af2412abb0efb969f298577.bindPopup(popup_c0c97e305fd64c99b2e241dfda56bdce)
+            ;
+
+            
+        
+    
+        var marker_b2dfa96315064dd3b176a9c89ce82995 = L.marker(
+            [30.280043927786398, -97.74563049222022],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_696ea473942346738bf3c1e9e6dd19a2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_70cb3fc819ed4a55a58b8cc8e2975562 = $('<div id="html_70cb3fc819ed4a55a58b8cc8e2975562" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $144, <b>Rooms</b>:1, <b>Distance</b> : 1.01 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/522136?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_696ea473942346738bf3c1e9e6dd19a2.setContent(html_70cb3fc819ed4a55a58b8cc8e2975562);
+            
+
+            marker_b2dfa96315064dd3b176a9c89ce82995.bindPopup(popup_696ea473942346738bf3c1e9e6dd19a2)
+            ;
+
+            
+        
+    
+        var marker_857991be79644dc0bf76770c3a7eb326 = L.marker(
+            [30.2586489163587, -97.7326373091024],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_120f8f9ca5e7430b9e30f5d378ab0119 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ebeed6b20a764ec6aa64dc7d8532ab20 = $('<div id="html_ebeed6b20a764ec6aa64dc7d8532ab20" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $190, <b>Rooms</b>:2, <b>Distance</b> : 1.75 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/2404206?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_120f8f9ca5e7430b9e30f5d378ab0119.setContent(html_ebeed6b20a764ec6aa64dc7d8532ab20);
+            
+
+            marker_857991be79644dc0bf76770c3a7eb326.bindPopup(popup_120f8f9ca5e7430b9e30f5d378ab0119)
+            ;
+
+            
+        
+    
+        var marker_a9a135103e2e4769aeb653be1ecbe39e = L.marker(
+            [30.2780235401368, -97.7590784333842],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_51130ef7bf0f4888b4cb088fd362a37c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_083c904f678b4af99f3cd61e38e3aca2 = $('<div id="html_083c904f678b4af99f3cd61e38e3aca2" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $85, <b>Rooms</b>:1, <b>Distance</b> : 1.67 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5476443?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_51130ef7bf0f4888b4cb088fd362a37c.setContent(html_083c904f678b4af99f3cd61e38e3aca2);
+            
+
+            marker_a9a135103e2e4769aeb653be1ecbe39e.bindPopup(popup_51130ef7bf0f4888b4cb088fd362a37c)
+            ;
+
+            
+        
+    
+        var marker_e70eefa69fbe411f8fea7d5eacfa5b86 = L.marker(
+            [30.257345705799302, -97.7512251863072],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e52e21c203cf4ce1b97bd20109e0e02f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_49e9b4368b72444fb4de26dcb5244050 = $('<div id="html_49e9b4368b72444fb4de26dcb5244050" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $72, <b>Rooms</b>:1, <b>Distance</b> : 1.69 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17638048?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_e52e21c203cf4ce1b97bd20109e0e02f.setContent(html_49e9b4368b72444fb4de26dcb5244050);
+            
+
+            marker_e70eefa69fbe411f8fea7d5eacfa5b86.bindPopup(popup_e52e21c203cf4ce1b97bd20109e0e02f)
+            ;
+
+            
+        
+    
+        var marker_51281c6dba7c4c868b810c0369009e12 = L.marker(
+            [30.284459972986802, -97.7471727379142],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_8b32ebd9ccd040d99d54015a9a5428c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a058584913ee4f8bae1a93971ba33dce = $('<div id="html_a058584913ee4f8bae1a93971ba33dce" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $60, <b>Rooms</b>:1, <b>Distance</b> : 1.52 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16516193?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_8b32ebd9ccd040d99d54015a9a5428c8.setContent(html_a058584913ee4f8bae1a93971ba33dce);
+            
+
+            marker_51281c6dba7c4c868b810c0369009e12.bindPopup(popup_8b32ebd9ccd040d99d54015a9a5428c8)
+            ;
+
+            
+        
+    
+        var marker_0b61de3841784255b32fe57219475945 = L.marker(
+            [30.276972638800803, -97.7624787216441],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_87304a3cca9f4935b7b1c3eb61382a76 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4b43c78d68c74e138fe1e7ef8c10c2ed = $('<div id="html_4b43c78d68c74e138fe1e7ef8c10c2ed" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $150, <b>Rooms</b>:1, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/718929?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_87304a3cca9f4935b7b1c3eb61382a76.setContent(html_4b43c78d68c74e138fe1e7ef8c10c2ed);
+            
+
+            marker_0b61de3841784255b32fe57219475945.bindPopup(popup_87304a3cca9f4935b7b1c3eb61382a76)
+            ;
+
+            
+        
+    
+        var marker_76fb253f488c46029e07e5cfcfc5372b = L.marker(
+            [30.272036905255998, -97.72384479129481],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_d5813b96b9644dcbb852310594c90edc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c9012643a29849438cdd230725eaff64 = $('<div id="html_c9012643a29849438cdd230725eaff64" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $90, <b>Rooms</b>:1, <b>Distance</b> : 1.91 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/883802?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_d5813b96b9644dcbb852310594c90edc.setContent(html_c9012643a29849438cdd230725eaff64);
+            
+
+            marker_76fb253f488c46029e07e5cfcfc5372b.bindPopup(popup_d5813b96b9644dcbb852310594c90edc)
+            ;
+
+            
+        
+    
+        var marker_508b8c93382c41bc95cda955a3a53544 = L.marker(
+            [30.280186363523303, -97.7403713459402],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_6460d1d803f84abb93e425830b278470 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_44f9225ade5c47bfb268c618c3e880eb = $('<div id="html_44f9225ade5c47bfb268c618c3e880eb" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $160, <b>Rooms</b>:1, <b>Distance</b> : 1.05 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17208319?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_6460d1d803f84abb93e425830b278470.setContent(html_44f9225ade5c47bfb268c618c3e880eb);
+            
+
+            marker_508b8c93382c41bc95cda955a3a53544.bindPopup(popup_6460d1d803f84abb93e425830b278470)
+            ;
+
+            
+        
+    
+        var marker_0ff2c6d9eaa94f76adfa40715447e5f0 = L.marker(
+            [30.2555315483283, -97.7470302039039],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_dceb08187c0d41378627d791500ea304 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_057a693f6c79438c868f3bd5264003d2 = $('<div id="html_057a693f6c79438c868f3bd5264003d2" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $199, <b>Rooms</b>:1, <b>Distance</b> : 1.76 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/17635451?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_dceb08187c0d41378627d791500ea304.setContent(html_057a693f6c79438c868f3bd5264003d2);
+            
+
+            marker_0ff2c6d9eaa94f76adfa40715447e5f0.bindPopup(popup_dceb08187c0d41378627d791500ea304)
+            ;
+
+            
+        
+    
+        var marker_6521b2a7019445caac77a795507ceec7 = L.marker(
+            [30.2548990059478, -97.74648122857799],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_2ecb298819404e569478bceee2868049 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7d102555c49b475ab03aa4db70e2204f = $('<div id="html_7d102555c49b475ab03aa4db70e2204f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $96, <b>Rooms</b>:1, <b>Distance</b> : 1.82 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/9507616?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_2ecb298819404e569478bceee2868049.setContent(html_7d102555c49b475ab03aa4db70e2204f);
+            
+
+            marker_6521b2a7019445caac77a795507ceec7.bindPopup(popup_2ecb298819404e569478bceee2868049)
+            ;
+
+            
+        
+    
+        var marker_f102086ac0e84cc29a12fc93f578a062 = L.marker(
+            [30.2742727739788, -97.7469753579376],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a9017cf864eb477eb57e4f0d3c7fbb5b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0812aae0c3e24a479adc2bd3878ebf32 = $('<div id="html_0812aae0c3e24a479adc2bd3878ebf32" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $187, <b>Rooms</b>:2, <b>Distance</b> : 0.47 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/4013309?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_a9017cf864eb477eb57e4f0d3c7fbb5b.setContent(html_0812aae0c3e24a479adc2bd3878ebf32);
+            
+
+            marker_f102086ac0e84cc29a12fc93f578a062.bindPopup(popup_a9017cf864eb477eb57e4f0d3c7fbb5b)
+            ;
+
+            
+        
+    
+        var marker_81df93717c1b4770a7d9965e163006a7 = L.marker(
+            [30.2810381363557, -97.7454598985763],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_9ab6402526a2471b844213c02a7bce71 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_07aaebd9561940b28a1932026f376e7f = $('<div id="html_07aaebd9561940b28a1932026f376e7f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $129, <b>Rooms</b>:1, <b>Distance</b> : 1.11 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/1401798?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_9ab6402526a2471b844213c02a7bce71.setContent(html_07aaebd9561940b28a1932026f376e7f);
+            
+
+            marker_81df93717c1b4770a7d9965e163006a7.bindPopup(popup_9ab6402526a2471b844213c02a7bce71)
+            ;
+
+            
+        
+    
+        var marker_54bc2b39318744f199149d812f59deb4 = L.marker(
+            [30.2660444009302, -97.7254612986028],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_b3f340836a054f21b37933017d953c1a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b48711f4601a4b839576e99749bc5f50 = $('<div id="html_b48711f4601a4b839576e99749bc5f50" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $75, <b>Rooms</b>:1, <b>Distance</b> : 1.84 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/19243518?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_b3f340836a054f21b37933017d953c1a.setContent(html_b48711f4601a4b839576e99749bc5f50);
+            
+
+            marker_54bc2b39318744f199149d812f59deb4.bindPopup(popup_b3f340836a054f21b37933017d953c1a)
+            ;
+
+            
+        
+    
+        var marker_efaeb5c21e104d178dcc1d44fbdcdbd3 = L.marker(
+            [30.261299600742102, -97.73752160395959],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_ca7563fe30a34addae78abccd6eb3f6e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92df391ed84640b8ab257ef05ddbc42f = $('<div id="html_92df391ed84640b8ab257ef05ddbc42f" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $175, <b>Rooms</b>:1, <b>Distance</b> : 1.24 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16977499?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_ca7563fe30a34addae78abccd6eb3f6e.setContent(html_92df391ed84640b8ab257ef05ddbc42f);
+            
+
+            marker_efaeb5c21e104d178dcc1d44fbdcdbd3.bindPopup(popup_ca7563fe30a34addae78abccd6eb3f6e)
+            ;
+
+            
+        
+    
+        var marker_3db04798d4b64dfab04c98ba9ab622f3 = L.marker(
+            [30.257479047711502, -97.7313829508326],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e47c38d2f57345d0807a728ac337e08e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e0b688e6e11404086df1c6784903e22 = $('<div id="html_4e0b688e6e11404086df1c6784903e22" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $159, <b>Rooms</b>:Studio, <b>Distance</b> : 1.92 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16881707?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_e47c38d2f57345d0807a728ac337e08e.setContent(html_4e0b688e6e11404086df1c6784903e22);
+            
+
+            marker_3db04798d4b64dfab04c98ba9ab622f3.bindPopup(popup_e47c38d2f57345d0807a728ac337e08e)
+            ;
+
+            
+        
+    
+        var marker_735edb98461549ad90baccf46d9ae008 = L.marker(
+            [30.266431112813695, -97.7327088392499],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_64b6115b52014cf89369f5b84d93348b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_014b14da36df4566a1d7b9c4174396f8 = $('<div id="html_014b14da36df4566a1d7b9c4174396f8" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $97, <b>Rooms</b>:1, <b>Distance</b> : 1.18 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5521345?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_64b6115b52014cf89369f5b84d93348b.setContent(html_014b14da36df4566a1d7b9c4174396f8);
+            
+
+            marker_735edb98461549ad90baccf46d9ae008.bindPopup(popup_64b6115b52014cf89369f5b84d93348b)
+            ;
+
+            
+        
+    
+        var marker_36f1b177411d4ddfbcb502a2b226db9e = L.marker(
+            [30.262467094102398, -97.72778430484671],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_e69336272b54466482a16f77e638cd01 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92c93f45674447a7b3b47ff10365b6b5 = $('<div id="html_92c93f45674447a7b3b47ff10365b6b5" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $115, <b>Rooms</b>:1, <b>Distance</b> : 1.81 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/16172476?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_e69336272b54466482a16f77e638cd01.setContent(html_92c93f45674447a7b3b47ff10365b6b5);
+            
+
+            marker_36f1b177411d4ddfbcb502a2b226db9e.bindPopup(popup_e69336272b54466482a16f77e638cd01)
+            ;
+
+            
+        
+    
+        var marker_586d550a4a224ca58222422ca36eaca8 = L.marker(
+            [30.272771419096497, -97.7329004118178],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_003d3a71f6cd45b588ddbd76bdd1c760 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9384b690b4a241c2aaa01c1976c7a16d = $('<div id="html_9384b690b4a241c2aaa01c1976c7a16d" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $90, <b>Rooms</b>:1, <b>Distance</b> : 1.05 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/7005164?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_003d3a71f6cd45b588ddbd76bdd1c760.setContent(html_9384b690b4a241c2aaa01c1976c7a16d);
+            
+
+            marker_586d550a4a224ca58222422ca36eaca8.bindPopup(popup_003d3a71f6cd45b588ddbd76bdd1c760)
+            ;
+
+            
+        
+    
+        var marker_f7a51e4eb6084797ac1cad0b54bec3ac = L.marker(
+            [30.264161540274703, -97.7413510693055],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_a415f3bdd8994c2c90d75dabda813647);
+        
+    
+            var popup_a0e5dfd00e514f31b992de543b754578 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33982fce7456440eacd0bb097513ce26 = $('<div id="html_33982fce7456440eacd0bb097513ce26" style="width: 100.0%; height: 100.0%;"><b>Price</b>: $99, <b>Rooms</b>:1, <b>Distance</b> : 0.8 km<br>Link by clicking <a href="https://www.airbnb.com/rooms/5438705?location=Austin%2C%20TX ">here</a></div>')[0];
+                popup_a0e5dfd00e514f31b992de543b754578.setContent(html_33982fce7456440eacd0bb097513ce26);
+            
+
+            marker_f7a51e4eb6084797ac1cad0b54bec3ac.bindPopup(popup_a0e5dfd00e514f31b992de543b754578)
+            ;
+
+            
+        
+</script>
