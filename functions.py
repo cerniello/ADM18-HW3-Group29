@@ -114,6 +114,10 @@ def preprocessing(data):
 
 
 # vocabulary function
+'''
+For the creation of vocabulary and the first search engine, the two operation have been done together: 
+The main idea is to open all the file in the loop, checking the presence of the word in both structures; in this way, if the word is already in the dictionaries will be updated. Otherwise, a new key (the word in vocabulary and the id for the new word in the inverted index) will be add.
+'''
 
 def create_vocabulary_and_ii1 (data):
     n = len(data)
@@ -126,7 +130,23 @@ def create_vocabulary_and_ii1 (data):
         tokenized_str = (remove_step(data.iloc[i]['title']) + ' ' 
                                      + remove_step(data.iloc[i]['description']))
 
-        # creating the dictionary
+        # creating the dictionary and the ii1
+        ''' alex
+        for term in tokenized_str.split(' '):
+            if term in vocabulary.keys():
+                term_id = vocabulary[term]
+                lista = ii1[term_id]
+                document = 'doc_'+str(i)
+                if document in lista:
+                    continue
+                else:        
+                    ii1[term_id].append('doc_'+str(i))
+            else:
+                vocabulary[term] = cnt
+                term_id = cnt
+                cnt+=1
+                ii1[term_id] = ['doc_'+str(i)]
+        '''
         for term in tokenized_str.split(' '):
             if term in vocabulary.keys():
                 term_id = vocabulary[term]
@@ -405,19 +425,29 @@ def rooms_rank (rooms, nrooms):
     
     # taking the distance between the two rooms
     value = nrooms - rooms
+    
+    #if value is 0, it means that the doc/post completely fits with the user needs, otherwise, we setted different score, according on how much the value steps away from the best value. If the difference (value) is too high or is negative, it doesn't fit well so we decided to give 0, giving advantage to other docs.  
+    
+    switch (value){
+        case < 0 :
+            return 0
+        case 0:
+            return 1
+        case 1:
+            return 0.75
+        case 2:
+            return 0.5
+        case 3:
+            return 0.25
+        default:
+            return 0
+    }
+    
 
-    if value < 0:
-        return 0
-    elif value == 0:
-        return 1
-    elif value == 1:
-        return 0.75
-    elif value == 2:
-        return 0.5
-    elif value == 3:
-        return 0.25
-    else:
-        return 0
+
+# For the last search engine with additional information put by the users, we decided "to embed" the score for price, bedrooms and location directly in the first search engine created. Hence, we are able to add every doc with his new score into the heap. And for k documents, we call the heap with heappop function in such a way that we get the k documents with highest score, shown in a dataframe.
+
+# For computing the distance score, we used geopy to find the latitude and longitude of locations and to calculate the distance between the place searched and the position of the documents.ude of locations and to calculate the distance between 2 places.  
 
 
 ##### Q4. Search engine 3
@@ -458,7 +488,7 @@ def search_engine_3(query):
     
     # loading location's informations from geopy
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
-    location = geolocator.geocode(location)
+    location = geolocator.geocode(location, timeout=None)
     center = (location.latitude, location.longitude)   
     
     #if len(str(rmin)) == 0:
