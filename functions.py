@@ -32,6 +32,8 @@ from geopy.geocoders import Nominatim
 from geopy import distance
 import folium
 
+import matplotlib.pyplot as plt
+
 
 
 # Stemming functions
@@ -390,12 +392,12 @@ def first_k_documents(heap_rank_lst, k = 5):
 ##### RANKING FUNCTIONS
 
 # scoring distance rank between query and house of document
-def distance_rank(center, house):
+def distance_rank(center, house, max = 15):
       
     R = distance.distance(center, house).km
     
-    if R < 15:
-        return round(1-R*1/15, 4)
+    if R < max:
+        return round(1-R*1/max, 4)
     else:
         return 0
 
@@ -475,12 +477,16 @@ def search_engine_3(query):
         return
     
     # user's informations for the ranks
-    print("target price:")
+    print("target price: ")
     target_price = int(input())
-    print("n rooms:")
+    print("n rooms: ")
     rooms = int(input())
-    print("location")
+    print("location: ")
     location = input()
+
+    max_distance = int(input('max distance from your location(km): '))
+    if max_distance <= 0:
+        max_distance = 10 # default value 10 km
     
     # loading location's informations from geopy
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
@@ -501,7 +507,7 @@ def search_engine_3(query):
                 
             target_location = (float(row[5]), float(row[6]))
             rank_dist = distance_rank(center, target_location)
-             
+
             score_price = 0.2*price_rank(target_price,dp)
             ratio_rooms = 0.1*rooms_rank(rooms, nrooms)
             score_location = 0.7*rank_dist
@@ -533,14 +539,14 @@ def search_engine_3(query):
 
 def houses_map(location, km):
     """
-    return the map centered on the location
-    with the hotel inside the radius(km)
-    input:
-    - location
-    - km
-    output:
-    - folium map
-    """
+        return the map centered on the location
+        with the hotel inside the radius(km)
+        input:
+        - location
+        - km
+        output:
+        - folium map
+        """
     
     # find the location with geolocator
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
@@ -548,7 +554,7 @@ def houses_map(location, km):
     
     # take city tuples
     center = (location.latitude, location.longitude)
-    m = folium.Map(center, zoom_start=13)
+    m = folium.Map(center, zoom_start=14)
     folium.Marker(location = center, icon=folium.Icon(icon='cloud',color='green')).add_to(m)
     folium.Circle(center, radius= km * 1000, color = 'blue', fill = True).add_to(m)
     
@@ -561,7 +567,57 @@ def houses_map(location, km):
             house = (float(row[5]),float(row[6]))
             
             riga = row[7] + '\n' +row[8]
-            if distance.distance(center, house).km <= km:
+            
+            dist = distance.distance(center,house).km
+            
+            if dist <= km:
+                temp = ('<b>Price</b>: ' + row[0]+ ', <b>Rooms</b>:' +  row[1] +
+                        ', <b>Distance</b> : ' + str(round(dist,2)) + ' km' +
+                        '<br>Link by clicking <a href="%s">here</a>' %row[8])
+                    
                 folium.Marker(location = house,
-                              popup = row[8]).add_to(m)
+                              popup = temp).add_to(m)
     return m
+
+
+
+# plotting
+
+
+def price_rank_100():
+
+    my_price=100
+
+    plt.figure(figsize=(12, 7))
+    plt.plot([float(integer) for integer in range(0, 200, 1)],
+             [float(price_rank(my_price,integer)) for integer in range(0, 200, 1)],
+             color = 'blue', lw=2, zorder=3)
+    plt.annotate('max rank for target price', xy=(my_price, 1), xytext=(125, 0.8),size = 12 )
+    plt.xlabel("Document Prices", size = 20)
+    plt.ylabel("Price ranking", size = 20)
+    plt.title('Example of price ranker - Target price: 100$')
+    plt.axvline(x=100, ymax = 0.95, color='orange', zorder = 2)
+
+    plt.grid(linestyle='--', linewidth=2,color='lightgray', zorder = 0)
+
+    plt.show()
+             
+    return
+
+def location_rank():
+    my_max_dist=15
+
+
+    plt.figure(figsize=(12, 7))
+    plt.plot([float(integer) for integer in range(0, 18, 1)],
+             [float(round(1-distance*1/my_max_dist, 4)) if distance < my_max_dist else 0 for distance in range(0, 18, 1)  ],
+             color = 'blue', lw=2, zorder=3)
+
+    plt.xlabel("Distance", size = 20)
+    plt.ylabel("Location ranking", size = 20)
+    plt.title('Example of Distance ranker - Max distance given: 15 km')
+
+    plt.grid(linestyle='--', linewidth=2,color='lightgray', zorder = 0)
+
+    plt.show()
+    return
