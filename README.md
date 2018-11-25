@@ -35,17 +35,17 @@ The access to data will be only through these documents.
   1. create_vocabulary_and_ii1 : code to build the vocabulary and the first inverted index. For this function it's been required to pass through each document, checking all words.
   The two dictionaries created have been saved in a pickle file, so the function doesn't return anything.
   
-  2. search_engine_1 : basing on the query given in input, it's been calculated the result of all the documents where all its words are present. The method creates thedataframe and returns the first 5 documents of it.
+  2. search_engine_1 : basing on the query given in input, it's been calculated the result of all the documents where all its words are present. The method creates the dataframe and returns the first 5 documents of it.
   
   3. inverted_index_TFIDF : it exploits 2 methods, reduce_doc_list and compute_ii2_TFIDF.
   
-  reduce_doc_list takes care sum up all duplicates in each list (the list is the value into the dict). This is the first step for computing the tfidf. Thus, until now have been created the inverted index only with the term frequency.
+  reduce_doc_list takes care of all the words (term_id), appending all documents containing the term_id into its list (the list is the value into the dict). This is the first step for computing the tfidf. 
   
-  Using the function compute_ii2_TFIDF, having the number of documents in which the word is ( through the len of each list into the ii2 itself ) and having the whole number of all the documents,  idf is easily computed.
+  With function compute_ii2_TFIDF we create the TFIDF following the theoretical formulas learned in classes.
   
   4. search_engine_2 :
-   The method looks up, using ii1 and ii2, only for the words that compares into the query.
-   After took every useful document with each tfidf, computing tfidf also for the query, it returns the list with each useful document and the related similarity. 
+   The method, using a combination of ii1 and ii2, looks up only for document wich contains all the words of the query.
+   After took every useful document with each tfidf, computing cosine distances with query array (absolute frequencies of the terms), it returns the list with each useful document and the related similarity. 
   The method is fast because, computing a smaller ii2 for each query, there is no need to create big structures.
  first_k_documents takes the list returned from the search engine and show the first k documents into a dataframe.
  
