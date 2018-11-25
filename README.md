@@ -44,8 +44,9 @@ The access to data will be only through these documents.
   With function compute_ii2_TFIDF we create the TFIDF following the theoretical formulas learned in classes.
   
   4. search_engine_2 :
-   The method, using a combination of ii1 and ii2, looks up only for document wich contains all the words of the query.
+   The method, using a combination of ii1 and ii2, looks up only on documents that contains all the words of the query.
    After took every useful document with each tfidf, computing cosine distances with query array (absolute frequencies of the terms), it returns the list with each useful document and the related similarity. 
+   
   The method is fast because, computing a smaller ii2 for each query, there is no need to create big structures.
  first_k_documents takes the list returned from the search engine and show the first k documents into a dataframe.
  
