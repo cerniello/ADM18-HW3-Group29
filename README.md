@@ -1,6 +1,7 @@
-# ADM18-HW3-Group29
+# Search_Engine_Airbnb
 
 ## Create different kind of Search Engine in order to retrieve documents from airbnb in the Texas state. 
+3rd homework for Alogithm of Data Minig @LaSapienza University
 
 <p align="center">
   <img width="460" height="300" src="https://www.kajola.net/wp-content/uploads/2017/11/AirBnB.jpg">
